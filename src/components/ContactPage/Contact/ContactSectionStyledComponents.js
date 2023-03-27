@@ -23,8 +23,8 @@ export const FaBarsIcon = styled(FaBars)`
 `;
 export const Section1 = styled.div`
   background-image: url("https://www.prabisha.co.uk/wp-content/uploads/2022/10/6-PC-UK-Website-Banner-CONTACT-scaled.jpg");
-  height: 73%;
   background-size: cover;
+  height: 73%;
   opacity: 0.9;
   padding: 30px;
   max-width: 100%;

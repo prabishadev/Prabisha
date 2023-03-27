@@ -6,16 +6,28 @@ export const TabListItem = styled.li`
   margin: 0 20px 0 20px;
 `;
 export const ButtonListItem = styled.button`
-  background-color: #d1ab43;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
   border: none;
-  border-radius: 7px;
-  padding: 17px;
-  color: #ffffff;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
   cursor: pointer;
-  font-weight: 550;
+  outline: none;
   &:hover {
-    color: #aeaeb5;
+    background-color: #0b034f;
+    box-shadow: 0px 15px 20px #58547d;
+    color: #fff;
+    transform: translateY(-7px);
   }
+  &:active {
+    transform: translateY(-1px);
+  }  
   @media (max-width: 768px) {
     width: 300px;
     margin: 20px 0 20px 0;

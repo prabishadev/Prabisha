@@ -12,7 +12,8 @@ export const ServiceCardItem1 = styled.div`
     margin: 10px;
     padding: 20px;
     margin-bottom: 120px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: 30px 30px 91px #585859,
+    -30px -30px 91px #ffffff;
   }
   @media (max-width: 900px) {
     min-height: 490px;

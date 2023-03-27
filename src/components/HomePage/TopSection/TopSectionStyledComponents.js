@@ -143,7 +143,7 @@ export const ContactContainer = styled.div`
 
 export const Section2 = styled.div`
   padding: 20px;
-  background-image: url("https://www.prabisha.co.uk/wp-content/uploads/2023/01/pexels-mike-b-6100149-1-1.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://www.prabisha.co.uk/wp-content/uploads/2023/01/pexels-mike-b-6100149-1-1.jpg");
   background-size: cover;
   height: 100vh;
 `;

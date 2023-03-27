@@ -13,9 +13,9 @@ const EachImageItem = (props) => {
   }
   console.log(height);
   return (
-    <ListItem>
+    <ListItem  href={link} target="_blank" rel="noreferrer">
       <Image src={imgUrl} height={height} alt="images" />
-      <Anchor href={link} target="_blank" rel="noreferrer">
+      <Anchor>
         <HoverHead>{hoverText}</HoverHead>
       </Anchor>
     </ListItem>
