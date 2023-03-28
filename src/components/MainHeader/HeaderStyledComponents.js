@@ -148,6 +148,7 @@ export const Section21 = styled.div`
   justify-content: space-between;
   align-items: center;
   padding:10px 15px 10px 30px;
+  text-decoration:none;
   -webkit-box-shadow: 0 10px 10px -10px #000000;
   -moz-box-shadow: 0 10px 10px -10px #000000;
   box-shadow: 0 10px 10px -10px #000000;
@@ -164,6 +165,11 @@ export const Section2logo = styled.a`
 export const Imagelogo = styled.img`
   height:4rem;
   width:8rem;
+  padding-right:100px;
+  @media(min-width:769px)and(max-width:1199px){
+    padding-right:0px;
+  }
+  
 `;
 export const LinkItem = styled(Link)`
   text-decoration:none;
@@ -180,6 +186,7 @@ export const NavItem = styled.h1`
   font-size: 1rem;
   margin: 10px;
   font-weight: 500;
+  text-decoration:none;
   &:hover{
     color:#c99b3b;
   }
@@ -187,6 +194,23 @@ export const NavItem = styled.h1`
     color:#fff;
   }
 `;
+
+export const BtnItem = styled.button`
+  color: #fff;
+  font-size: 0.8rem;
+  margin: 10px;
+  font-weight: 500;
+  text-decoration:none;
+  border:none;
+  background-color: #c99b3b;
+  border-radius:10px;
+  padding:12px;
+  cursor:pointer;
+  @media (max-width:768px){
+    color:#fff;
+  }
+`;
+
 export const MobileSectionNavbar = styled.div`
   display: flex;
   align-items: center;
