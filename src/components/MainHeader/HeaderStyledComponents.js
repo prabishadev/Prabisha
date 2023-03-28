@@ -167,9 +167,6 @@ export const Imagelogo = styled.img`
 `;
 export const LinkItem = styled(Link)`
   text-decoration:none;
-  &:hover{
-    color:#c99b3b;
-  }
 `;
 
 export const Section2NavItems = styled.div`
@@ -186,6 +183,9 @@ export const NavItem = styled.h1`
   font-size: 1rem;
   margin: 10px;
   font-weight: 500;
+  &:hover{
+    color:#c99b3b;
+  }
   @media (max-width:768px){
     color:#fff;
   }
