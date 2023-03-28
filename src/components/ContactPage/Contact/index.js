@@ -1,5 +1,8 @@
 import MainHeader from "../../MainHeader";
 import {
+  Section1,
+  ContactHeading,
+  HeadingContainer,
   Section2M,
   Section21M,
   Section21M1,
@@ -15,11 +18,6 @@ import {
   Section31M,
   Section32M,
   Image,
-  ContactForm,
-  Input,
-  Select,
-  Option,
-  Button,
   Text1,
   Text2,
   Section4M,
@@ -41,12 +39,22 @@ import {
   Section53M,
   AnchorTag,
   ImageA,
+  ContactForm1,
+  SpanHeading,
+  Form1,Input1,
+  Label1,Textarea,
+  Button12
 } from "./ContactSectionStyledComponents";
 
 const ContactSection = () => {
   return (
     <>
-      <MainHeader/>
+    <MainHeader/>
+      <Section1>
+        <HeadingContainer>
+          <ContactHeading>CONTACT US</ContactHeading>
+        </HeadingContainer>
+      </Section1>
       <Section2M>
         <Section21M>
           <Section21M1>
@@ -66,7 +74,7 @@ const ContactSection = () => {
           </Section21M2>
           <Section21M3>
             <ReachUs>
-              <Span>__ </Span>Reach Us At
+              <Span>--</Span>Reach Us At
             </ReachUs>
             <Section21M31>
               <IconContainer>
@@ -97,18 +105,19 @@ const ContactSection = () => {
             <br />
             Reach out to us now!
           </Text2>
-          <ContactForm type="submit">
-            <Input type="text" placeholder="Name" />
-            <Input type="email" placeholder="Email" />
-            <Input type="number" placeholder="Mobile" />
-            <Select placeholder="Service">
-              <Option>Digital Marketing</Option>
-              <Option>Website Development</Option>
-              <Option>SEO</Option>
-              <Option>Graphics Design</Option>
-            </Select>
-            <Button>SUBMIT</Button>
-          </ContactForm>
+          <ContactForm1>
+<SpanHeading>Contact Us</SpanHeading>
+<Form1>
+  <Label1 for="name">Name:</Label1>
+  <Input1 type="text" required=""/>
+  <Label1 for="email">Email:</Label1>
+  <Input1 type="email" id="email" name="email" required=""/>
+  <Label1 for="message">Message:</Label1>
+  <Textarea id="message" name="message" required=""></Textarea>
+  <Button12 type="submit">Submit</Button12>
+</Form1>
+</ContactForm1>
+
         </Section32M>
       </Section3M>
       <Section4M>
@@ -144,7 +153,7 @@ const ContactSection = () => {
         </Section41M>
         <Section42M>
           <Image1
-            src="https://www.prabisha.co.uk/wp-content/uploads/2022/09/london-city.jpg"
+            src="https://www.planetware.com/photos-large/ENG/uk-best-places-london.jpg"
             alt="city"
           />
         </Section42M>
@@ -168,7 +177,7 @@ const ContactSection = () => {
         </Section51M>
         <Section52M>
           <Image2
-            src="https://www.prabisha.co.uk/wp-content/uploads/2022/09/india-gate-i-day-2022-1.jpg"
+            src="https://assets.gqindia.com/photos/621d40624a7fb4a9f12e5e15/master/pass/India.jpeg"
             alt=""
           />
         </Section52M>
@@ -202,6 +211,7 @@ const ContactSection = () => {
           </Section41M1>
         </Section53M>
       </Section5M>
+
     </>
   );
 };
