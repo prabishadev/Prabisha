@@ -1,19 +1,14 @@
 import {
   AYGContainer,
-  AYGTitle,
-  AYGLeftContainer,
+  AYGLeftContainer,WhatWeDoHead,
   AYGDescription,
-  AYGRightContainer,
-  AYGProposalFormTitle,
-  AYGProposalFormContainer,
-  AYGProposalFormSpan,
-  AYGProposalFormName,
-  AYGProposalFormBtn,
+  AYGRightContainer,AYGCard,AYGTitle,AYGForm,AYGGroup,AYGLabel,AYGInput,AYGSelect,AYGOption,AYGButton
 } from "./AYGStyledComponents";
 
 const AchieveYourGoals = () => (
   <AYGContainer>
     <AYGLeftContainer>
+      <WhatWeDoHead>WHAT WE DO?</WhatWeDoHead>
       <AYGTitle>
         We will help you achieve your goals and will be honest about the process
       </AYGTitle>
@@ -23,9 +18,9 @@ const AchieveYourGoals = () => (
         and out before developing personalised solutions to help their progress.
       </AYGDescription>
       <AYGTitle>
-        Quick Response | <AYGProposalFormSpan>24/7</AYGProposalFormSpan> |
+        Quick Response | <span>24/7</span> |
         Result Driven |
-        <AYGProposalFormSpan> Customer Satisfaction </AYGProposalFormSpan>
+        <span> Customer Satisfaction </span>
       </AYGTitle>
       <AYGDescription>
         Our team comprises experts from all different walks of life, so we are
@@ -38,18 +33,35 @@ const AchieveYourGoals = () => (
       </AYGDescription>
     </AYGLeftContainer>
     <AYGRightContainer>
-      <AYGProposalFormContainer>
-        <AYGProposalFormTitle>
-          <AYGProposalFormSpan>
-            Any Questions? Reach out to us now!
-          </AYGProposalFormSpan>
-        </AYGProposalFormTitle>
-        <AYGProposalFormName placeholder="Name" />
-        <AYGProposalFormName placeholder="Email" />
-        <AYGProposalFormName placeholder="Mobile" />
-        <AYGProposalFormName placeholder="Service" />
-        <AYGProposalFormBtn>Submit</AYGProposalFormBtn>
-      </AYGProposalFormContainer>
+    <AYGCard>
+      <AYGTitle>Any Questions? Reach out to us now!</AYGTitle>
+      <AYGForm>
+          <AYGGroup>
+            <AYGInput placeholder="" type="text" required />
+            <AYGLabel htmlFor="name">Name</AYGLabel>
+          </AYGGroup>
+          <AYGGroup>
+            <AYGInput placeholder="" type="email" id="email" name="email" required />
+            <AYGLabel htmlFor="email">Email</AYGLabel>
+          </AYGGroup>
+          <AYGGroup>
+            <AYGInput placeholder="" type="text" id="mobile" name="mobile" required />
+            <AYGLabel htmlFor="mobile">Mobile</AYGLabel>
+          </AYGGroup>
+          <AYGGroup>
+          <AYGLabel htmlFor="email">Select</AYGLabel>
+          <AYGSelect name="services" id="services">
+          <AYGOption value="none" selected disabled hidden>Services</AYGOption>
+            <AYGOption value="dm">Digital Marketing</AYGOption>
+            <AYGOption value="wd">Website Development</AYGOption>
+            <AYGOption value="seo">SEO</AYGOption>
+            <AYGOption value="gd">Graphic Design</AYGOption>
+          </AYGSelect>
+          </AYGGroup>
+          <AYGButton type="submit">Submit</AYGButton>
+      </AYGForm>
+    </AYGCard>
+
     </AYGRightContainer>
   </AYGContainer>
 );

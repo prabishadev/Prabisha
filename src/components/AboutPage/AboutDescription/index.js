@@ -1,4 +1,6 @@
 import {
+  WhoAreWeHead,
+  AboutUsBanner,
   ADContainer,
   AboutDescriptionContent1,
   AboutDescriptionContent2,
@@ -8,7 +10,10 @@ import {
 } from "./ADStyledComponents";
 
 const AboutDescription = () => (
+  <>
+  <AboutUsBanner>ABOUT US</AboutUsBanner>
   <ADContainer>
+    <WhoAreWeHead>WHO ARE WE?</WhoAreWeHead>
     <AboutDescriptionContent1>
       Founded in 2018, Prabisha Consulting is the 360
       <AboutDescriptionSpan>Digital marketing</AboutDescriptionSpan> & IT
@@ -40,6 +45,7 @@ const AboutDescription = () => (
       </AboutDescriptionSubSection>
     </AboutDescriptionContent2>
   </ADContainer>
+  </>
 );
 
 export default AboutDescription;

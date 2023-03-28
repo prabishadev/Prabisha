@@ -19,7 +19,7 @@ export const ListItem = styled.a`
   transition: all 0.5s;
   user-select: none;
   &:hover {
-    border: 1px solid #0b034f;
+    border: 1px solid #c99b3b;
     transform: scale(1.1);
   }
   

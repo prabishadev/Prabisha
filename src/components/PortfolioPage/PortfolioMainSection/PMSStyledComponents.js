@@ -4,17 +4,19 @@ export const PortfolioSection = styled.div`
   box-sizing: border-box;
   background-color: #ffffff;
 `;
-export const PortfolioHead = styled.h1`
-  color: #0b034f;
-  font-size: 2.1rem;
-  opacity: 80%;
-  font-weight: 450;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+export const PortfolioHead = styled.div`
+  background-image:url("https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+  background-size:cover;
+  height:80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:3rem;
+  font-weight:bold;
+  margin-bottom:none;
 `;
 export const TabsAndImagesCont = styled.div`
-  background-color: #ebecf2;
+  background-color: #e6e7e8;
 `;
 
 export const TabsUnlist = styled.ul`

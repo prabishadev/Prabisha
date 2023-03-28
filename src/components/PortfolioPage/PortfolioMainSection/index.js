@@ -485,8 +485,8 @@ const PortfolioMainSection = () => {
   return (
     // const array = getFilteredProjects()
     <PortfolioSection>
-      <PortfolioHead>PORTFOLIO</PortfolioHead>
       <TabsAndImagesCont>
+      <PortfolioHead>PORTFOLIO</PortfolioHead>
         <TabsUnlist>
           {tabsList.map((tabDetails) => (
             <TabItem

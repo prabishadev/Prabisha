@@ -52,7 +52,7 @@ export const OurMissionCard1 = styled.div`
   }
   @media (max-width: 900px) {
     background-color: white;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
   }
@@ -61,11 +61,12 @@ export const OurMissionCard1 = styled.div`
 export const OurMissionCard2 = styled.div`
   @media (max-width: 900px) {
     background-color: #0b034f;
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 15px;
+    margin-bottom:20px;
   }
   @media (min-width: 900px) {
     background-color: #0b034f;
@@ -74,6 +75,7 @@ export const OurMissionCard2 = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     padding: 15px;
+    margin-bottom:20px;
   }
 `;
 
@@ -85,4 +87,9 @@ export const OurMissionCard2Description = styled.p`
   font-weight: 300;
 `;
 
-export const OurMissionImage = styled.img``;
+export const OurMissionImage = styled.img`
+  @media (max-width: 768px) {
+    height:17rem;
+    width:13rem;
+  }
+`;

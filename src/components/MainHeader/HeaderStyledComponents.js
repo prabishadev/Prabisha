@@ -176,9 +176,6 @@ export const Section2NavItems = styled.div`
   text-decoration:none;
 `;
 export const NavItem = styled.h1`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #000;
   font-size: 1rem;
   margin: 10px;

@@ -20,14 +20,14 @@ export const ButtonListItem = styled.button`
   cursor: pointer;
   outline: none;
   &:hover {
-    background-color: #0b034f;
-    box-shadow: 0px 15px 20px #58547d;
+    background-color: #c99b3b;
+    box-shadow: 0px 15px 20px #d6bb83;
     color: #fff;
     transform: translateY(-7px);
   }
   &:active {
     transform: translateY(-1px);
-    background-color: #0b034f;
+    background-color: #c99b3b;
   }  
   @media (max-width: 768px) {
     width: 300px;

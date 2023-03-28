@@ -3,6 +3,7 @@ import "typeface-raleway";
 
 export const AYGContainer = styled.div`
   @media (min-width: 900px) {
+    font-family: "Raleway";
     height: 750px;
     background-color: #d5d1f678;
     padding-top: 150px;
@@ -11,27 +12,29 @@ export const AYGContainer = styled.div`
     display: flex;
   }
   @media (max-width: 900px) {
+    font-family: "Raleway";
     min-height: 850px;
     background-color: #d5d1f678;
     padding-top: 150px;
+    padding-bottom: 30px;
     padding-left: 9px;
     margin-top: 50px;
   }
 `;
+
+export const WhatWeDoHead = styled.h1`
+  color: #c99b3b;
+  font-family: "Raleway";
+`;
+
 
 export const AYGLeftContainer = styled.div`
   @media (min-width: 900px) {
     width: 40vw;
   }
   @media (max-width: 900px) {
-    padding: 9px;
+    padding: 5px;
   }
-`;
-export const AYGTitle = styled.h2`
-  color: #362e68;
-  font-family: "Raleway", sans-serif;
-  font-size: 30px;
-  font-weight: 500;
 `;
 
 export const AYGDescription = styled.p`
@@ -50,75 +53,111 @@ export const AYGRightContainer = styled.div`
     justify-content: center;
   }
   @media (max-width: 900px) {
-    width: 100vw;
+    width: 90vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 `;
 
-export const AYGProposalFormTitle = styled.h2`
-  color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 28px;
-  margin-bottom: 30px;
+
+
+export const AYGCard = styled.div`
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+  height:60%;
+  display: flex;
+  flex-direction: column;
+  @media(max-width:768px){
+    width:70%;
+  }
+`;
+export const AYGTitle = styled.span`
+  font-size: 24px;
+  font-weight: 600;
   text-align: center;
 `;
-
-export const AYGProposalFormContainer = styled.div`
-  @media (min-width: 900px) {
-    width: 90%;
-    background-color: #0b034f;
-    height: 550px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  @media (max-width: 900px) {
-    width: 80vw;
-    background-color: #0b034f;
-    min-height: 500px;
-    margin-top: 150px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+export const AYGForm = styled.form`
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 `;
-export const AYGProposalFormSpan = styled.span`
-  color: #c99b3b;
-  font-size: 24px;
-  margin-left: 5px;
-  font-weight: 500;
+export const AYGGroup = styled.div`
+  position: relative;
 `;
-
-export const AYGProposalFormName = styled.input`
-  type:"text"
-  background-color:white;
-  height:47px;
-  border-radius:5px;
-  width:300px;
-  padding-left:14px;
-  outline:none;
-  font-size:18px;
-  cursor:pointer;
-  margin-bottom:20px;
-  
-`;
-
-export const AYGProposalFormBtn = styled.button`
-  background-color: #c99b3b;
-  font-size: 18px;
-  cursor: pointer;
+export const AYGInput = styled.input`
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
-  padding: 12px;
-  padding-left: 25px;
-  padding-right: 25px;
-  border-radius: 7px;
-  align-self: left;
-  border-width: 0px;
-  color: white;
+  outline: 0;
+  width: 90%;
+  background-color: transparent;
+  &:focus {
+    border-color: #3366cc;
+  }
+  &:placeholder-shown {
+    top: 10px;
+    background-color: transparent;
+  }
 `;
+
+export const AYGLabel = styled.label`
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all .3s ease;
+  &:focus {
+    border-color: #3366cc;
+  }
+  ${AYGInput}:placeholder-shown+ ~ &{
+    top: 10px;
+    background-color: transparent;
+  }
+  ${AYGInput}:focus ~ &{
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    color: #3366cc;
+    font-weight: 600;
+    font-size: 14px;
+  }
+`;
+export const AYGSelect = styled.select`
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 96%;
+  background-color: transparent;
+`;
+export const AYGOption = styled.option`
+  font-weight: 500;
+  font-size: 1rem;
+  color:#535859;
+  font-family: "Raleway";
+  @media(max-width:768px){
+    font-size: 0.8rem;
+  }
+`;
+
+export const AYGButton = styled.button`
+  background-color: #c99b3b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #755615;
+  }
+`;
+
