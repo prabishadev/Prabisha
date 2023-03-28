@@ -1,11 +1,11 @@
-import Header from "./Header";
+import MainHeader from "../MainHeader";
 import AboutDescription from "./AboutDescription";
 import AchieveYourGoals from "./AchieveYourGoals";
 import OurMission from "./OurMission";
 
 const AboutPage = () => (
   <>
-    <Header />
+    <MainHeader />
     <AboutDescription />
     <AchieveYourGoals />
     <OurMission />

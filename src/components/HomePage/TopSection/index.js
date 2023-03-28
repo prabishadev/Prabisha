@@ -1,17 +1,6 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import MainHeader from "../../MainHeader";
 import {
-  Section1,
-  IconSection,
-  ContactInfo1,
-  ContactInfo2,
-  Text,
-  ContactContainer,
   Section2,
-  Section21,
-  Section2logo,
-  Section2NavItems,
-  NavItem,
   TextSection,
   Text1,
   SpanText,
@@ -30,116 +19,14 @@ import {
   Section51Container,
   ClickableButtonContainer,
   ClickableButton,
-  MobileSectionNavbar,
-  LinkedinIcon,
-  FacebookIcon,
-  InstagramIcon,
-  TwitterIcon,
-  YoutubeIcon,
-  PhoneIcon,
-  MailIcon,
-  Menu,
-  Sidebar,
-  CloseButton,
 } from "./TopSectionStyledComponents";
 
-// import { ImLinkedin2 } from "react-icons/im";
-
 const TopSection = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
-
+  
   return (
     <>
-      <Section1>
-        <IconSection>
-          <LinkedinIcon />
-          <FacebookIcon />
-          <InstagramIcon />
-          <TwitterIcon />
-          <YoutubeIcon />
-        </IconSection>
-        <ContactContainer>
-          <ContactInfo1>
-            <PhoneIcon />
-            <Text>+44(0)7867090363</Text>
-          </ContactInfo1>
-          <ContactInfo2>
-            <MailIcon />
-            <Text>care@prabisha.co.uk</Text>
-          </ContactInfo2>
-        </ContactContainer>
-      </Section1>
+      <MainHeader/>
       <Section2>
-        <MobileSectionNavbar>
-          <Section2logo href="prabisha.co.uk">
-            <img
-              className="logo"
-              src="https://www.prabisha.co.uk/wp-content/uploads/2022/09/PC-Logo-NEW-for-Website-Page-PNG-1-300x140.png"
-              alt="logo"
-            />
-          </Section2logo>
-          <Menu onClick={toggleMenu} />
-          <Sidebar style={{ width: isOpen ? "250px" : "0" }}>
-            <CloseButton onClick={closeMenu}>×</CloseButton>
-
-            <Link to="/">
-              <NavItem>HOME</NavItem>
-            </Link>
-            <Link to="/services">
-              <NavItem>SERVICES</NavItem>
-            </Link>
-            <Link to="/portfolio">
-              <NavItem>PORTFOLIO</NavItem>
-            </Link>
-
-            <Link to="/blogs">
-              <NavItem>BLOG</NavItem>
-            </Link>
-            <Link to="/about">
-              <NavItem>ABOUT</NavItem>
-            </Link>
-            <Link to="/contact">
-              <NavItem>CONTACT</NavItem>
-            </Link>
-          </Sidebar>
-        </MobileSectionNavbar>
-        <Section21>
-          <Section2logo href="prabisha.co.uk">
-            <img
-              className="logo"
-              src="https://www.prabisha.co.uk/wp-content/uploads/2022/09/PC-Logo-NEW-for-Website-Page-PNG-1-300x140.png"
-              alt="logo"
-            />
-          </Section2logo>
-          <Section2NavItems>
-            <Link to="/">
-              <NavItem>HOME</NavItem>
-            </Link>
-            <Link to="/services">
-              <NavItem>SERVICES</NavItem>
-            </Link>
-            <Link to="/portfolio">
-              <NavItem>PORTFOLIO</NavItem>
-            </Link>
-            <Link to="/blogs">
-              <NavItem>BLOG</NavItem>
-            </Link>
-            <Link to="/about">
-              <NavItem>ABOUT</NavItem>
-            </Link>
-            <Link to="/contact">
-              <NavItem>CONTACT</NavItem>
-            </Link>
-          </Section2NavItems>
-        </Section21>
         <TextSection>
           <Text1>
             We help you <SpanText>SCALE UP </SpanText>your{" "}

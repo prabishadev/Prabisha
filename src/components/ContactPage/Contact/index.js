@@ -1,16 +1,5 @@
-import { Link } from "react-router-dom";
-
+import MainHeader from "../../MainHeader";
 import {
-  MobileSectionNavbar,
-  Logo,
-  Section2logo,
-  FaBarsIcon,
-  Section1,
-  Section2NavItems,
-  NavItem,
-  Section12,
-  ContactHeading,
-  HeadingContainer,
   Section2M,
   Section21M,
   Section21M1,
@@ -57,48 +46,7 @@ import {
 const ContactSection = () => {
   return (
     <>
-      <Section1>
-        <MobileSectionNavbar>
-          <Section2logo href="prabisha.co.uk">
-            <Logo
-              src="https://www.prabisha.co.uk/wp-content/uploads/2022/09/PC-Logo-NEW-for-Website-Page-PNG-1-300x140.png"
-              alt="logo"
-            />
-          </Section2logo>
-          <FaBarsIcon />
-        </MobileSectionNavbar>
-        <Section12>
-          <Section2logo href="prabisha.co.uk">
-            <Logo
-              src="https://www.prabisha.co.uk/wp-content/uploads/2022/09/PC-Logo-NEW-for-Website-Page-PNG-1-300x140.png"
-              alt="logo"
-            />
-          </Section2logo>
-          <Section2NavItems>
-            <Link to="/">
-              <NavItem>HOME</NavItem>
-            </Link>
-            <Link to="/services">
-              <NavItem>SERVICES</NavItem>
-            </Link>
-            <Link to="/portfolio">
-              <NavItem>PORTFOLIO</NavItem>
-            </Link>
-            <Link to="/blogs">
-              <NavItem>BLOG</NavItem>
-            </Link>
-            <Link to="/about">
-              <NavItem>ABOUT</NavItem>
-            </Link>
-            <Link to="/contact">
-              <NavItem>CONTACT</NavItem>
-            </Link>
-          </Section2NavItems>
-        </Section12>
-        <HeadingContainer>
-          <ContactHeading>CONTACT</ContactHeading>
-        </HeadingContainer>
-      </Section1>
+      <MainHeader/>
       <Section2M>
         <Section21M>
           <Section21M1>

@@ -160,7 +160,7 @@ export const SwiperCont = styled.div`
 `;
 
 export const EachSwiperSlide = styled.div`
-  padding: 10px;
+  padding: 7px;
   background-color: #f5f5f7;
   border: 4px solid white;
   border-radius: 20px;
@@ -169,8 +169,12 @@ export const EachSwiperSlide = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 40px;
-  width: 300px;
+  width: 270px;
   cursor: pointer;
+  @media (min-width: 769px) and (max-width:1199px){
+    width: 95%;
+    padding: 10px;
+  }
   @media (max-width: 768px) {
     width: 90%;
     padding: 10px;
@@ -188,7 +192,13 @@ export const GoogleReviewerName = styled.h1`
   text-align: left;
   font-weight: 500;
   color: #2f1d59;
-  font-size: 1 rem;
+  font-size: 1rem;
+  @media (min-width: 769px) and (max-width:1199px){
+    font-size: 0.9rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const GoogleReviewDate = styled.p`
@@ -199,10 +209,16 @@ export const GoogleReviewDate = styled.p`
 `;
 
 export const UserReview = styled.p`
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #2f1d59;
   height: 160px;
   overflow-y: auto;
+  @media (min-width: 769px) and (max-width:1199px){
+    font-size: 0.8rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const NameDateCont = styled.div`

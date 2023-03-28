@@ -27,6 +27,7 @@ export const ButtonListItem = styled.button`
   }
   &:active {
     transform: translateY(-1px);
+    background-color: #0b034f;
   }  
   @media (max-width: 768px) {
     width: 300px;

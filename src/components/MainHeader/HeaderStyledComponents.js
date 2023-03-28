@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { ImLinkedin2 } from "react-icons/im";
+import { Link } from "react-router-dom";
+
 import {
   BsFacebook,
   BsInstagram,
@@ -8,17 +10,16 @@ import {
   BsFillTelephoneFill,
 } from "react-icons/bs";
 import { FaBars } from "react-icons/fa";
-import "typeface-raleway";
 import { AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 
-export const HeaderContainer = styled.div`
+export const Section1 = styled.div`
   display: flex;
-  height: 40px;
-  background-color: #0b034f;
+  background-color: #c99b3b;
   justify-content: space-between;
+  height:35px;
+  padding:10px;
   align-items: center;
-  padding: 15px;
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -40,7 +41,6 @@ export const FacebookIcon = styled(BsFacebook)`
 export const Menu = styled(AiOutlineMenu)`
   height: 30px;
   width: 30px;
-  margin: 20px;
   color: black;
   padding-left: 10px;
   padding-right: 10px;
@@ -49,8 +49,8 @@ export const Menu = styled(AiOutlineMenu)`
 
 export const Sidebar = styled.div`
   width: 0;
-  height: 100vh;
-  background-color: #0b034f;
+  height: 100%;
+  background-color: #c99b3b;
   position: fixed;
   top: 0;
   left: 0;
@@ -58,11 +58,7 @@ export const Sidebar = styled.div`
   overflow-x: hidden;
   transition: 0.5s;
 `;
-export const Logo = styled.img`
-  height: 90px;
-  width: 220px;
-  margin: 20px;
-`;
+
 export const TwitterIcon = styled(BsTwitter)`
   height: 20px;
   width: 20px;
@@ -136,76 +132,66 @@ export const CloseButton = styled.button`
   font-size: 1.5rem;
   cursor: pointer;
 `;
-export const NavContainer = styled.div`
-  background-image: url("https://www.prabisha.co.uk/wp-content/uploads/2022/10/2-PC-UK-Website-Banner-ABOUT-scaled.jpg");
-  background-size: cover;
-  height: 80vh;
-  background-size: cover;
-`;
-export const DesktopNavContainer = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
 
-export const Section2logo = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-export const Section2NavItems = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-export const NavItem = styled.h1`
-  color: #fff;
-  cursor: pointer;
-  font-size: 20px;
-  margin: 10px;
-  font-weight: 400;
-`;
-export const MobileSectionNavbar = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100vw;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-`;
-
-export const LogoDesktop = styled.img`
-  height: 120px;
-  width: 250px;
-`;
-export const ContactContainer = styled.div`
-  display: flex;
-`;
 export const Text = styled.h4`
   color: #fff;
   font-size: 20px;
   font-weight: 400;
 `;
 
-export const AboutTitle = styled.h1`
-  color: white;
-  font-family: "Raleway";
-  font-size: 45px;
-  font-weight: 300;
-`;
-export const AboutSection = styled.div`
+export const ContactContainer = styled.div`
   display: flex;
-  flex-direction: column;
+`;
+
+export const Section21 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:15px 15px 15px 30px;
+  -webkit-box-shadow: 0 10px 10px -10px #000000;
+  -moz-box-shadow: 0 10px 10px -10px #000000;
+  box-shadow: 0 10px 10px -10px #000000;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+export const Section2logo = styled.a`
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding:10px;
 `;
-export const AboutDescription = styled.p`
-  color: white;
-  text-align: center;
-  font-family: "Raleway";
-  font-size: 20px;
+export const Imagelogo = styled.img`
+  height:5rem;
+  width:10rem;
+`;
+export const LinkItem = styled(Link)`
+  text-decoration:none;
+`;
+
+export const Section2NavItems = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration:none;
+`;
+export const NavItem = styled.h1`
+  color: #000;
+  font-size: 1rem;
+  margin: 10px;
+  font-weight: 500;
+  &:hover{
+    color:#c99b3b;
+  }
+  @media (max-width:768px){
+    color:#fff;
+  }
+`;
+export const MobileSectionNavbar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;

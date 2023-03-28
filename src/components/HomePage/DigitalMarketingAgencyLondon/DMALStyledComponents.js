@@ -3,15 +3,14 @@ import "typeface-raleway";
 
 export const DMALContainer = styled.div`
   @media (min-width: 900px) {
-    height: 850px;
     background-color: #d5d1f678;
     padding-top: 150px;
     padding-left: 130px;
+    padding-bottom: 130px;
     margin-top: 50px;
     display: flex;
   }
   @media (max-width: 900px) {
-    min-height: 850px;
     background-color: #d5d1f678;
     padding-top: 150px;
     padding-left: 9px;
@@ -50,7 +49,7 @@ export const DMALRightContainer = styled.div`
     justify-content: center;
   }
   @media (max-width: 900px) {
-    width: 100vw;
+    width: 95vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -71,7 +70,6 @@ export const DMALProposalFormContainer = styled.div`
   @media (min-width: 900px) {
     width: 60%;
     background-color: #0b034f;
-    height: 700px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -96,15 +94,12 @@ export const DMALProposalFormSpan = styled.span`
 `;
 
 export const DMALProposalFormName = styled.input`
-  type:"text"
+  type:"text";
   background-color:white;
-  height:47px;
   border-radius:5px;
-  width:300px;
-  padding-left:14px;
+  padding:12px;
   outline:none;
   font-size:18px;
-  cursor:pointer;
   margin-bottom:20px;
 `;
 

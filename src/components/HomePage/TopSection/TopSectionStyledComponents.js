@@ -12,11 +12,11 @@ import { AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 
 export const Section1 = styled.div`
   display: flex;
-  height: 40px;
-  background-color: #0b034f;
+  background-color: #c99b3b;
   justify-content: space-between;
+  height:35px;
+  padding:10px;
   align-items: center;
-  padding: 15px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -151,6 +151,7 @@ export const Section21 = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding:15px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -161,13 +162,21 @@ export const Section2logo = styled.a`
   justify-content: center;
   align-items: center;
 `;
+
+export const Imagelogo = styled.img`
+  height:6rem;
+  width:12rem;
+`;
+
+
 export const Section2NavItems = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration:none;
 `;
 export const NavItem = styled.h1`
-  color: #fff;
+  color: #000;
   font-size: 20px;
   margin: 10px;
   font-weight: 400;

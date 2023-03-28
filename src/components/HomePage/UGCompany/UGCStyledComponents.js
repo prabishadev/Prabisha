@@ -8,7 +8,7 @@ export const UGCContainer = styled.div`
     margin-right: 150px;
     border-radius: 25px;
     color: white;
-    padding: 9px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,7 @@ export const UGCContainer = styled.div`
   @media (max-width: 900px) {
     background-color: #0b034f;
     min-height: 50px;
-    width: 95vw;
+    width:90vw;
     border-radius: 25px;
     color: white;
     padding: 9px;

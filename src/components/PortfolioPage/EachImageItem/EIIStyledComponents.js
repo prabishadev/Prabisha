@@ -20,7 +20,7 @@ export const ListItem = styled.a`
   user-select: none;
   &:hover {
     border: 1px solid #0b034f;
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
   
   &:active {

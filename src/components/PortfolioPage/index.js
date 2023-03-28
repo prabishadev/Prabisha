@@ -1,9 +1,8 @@
 import PortfolioMainSection from "./PortfolioMainSection";
-import Header from "./Header";
-
+import MainHeader from "../MainHeader";
 const PortfolioPage = () => (
   <>
-    <Header />
+    <MainHeader/>
     <PortfolioMainSection />
   </>
 );

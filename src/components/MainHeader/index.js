@@ -1,6 +1,18 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import {
+  Section1,
+  IconSection,
+  ContactInfo1,
+  ContactInfo2,
+  Imagelogo,
+  Text,
+  ContactContainer,
+  Section21,
+  Section2logo,
+  LinkItem,
+  Section2NavItems,
+  NavItem,
+  MobileSectionNavbar,
   LinkedinIcon,
   FacebookIcon,
   InstagramIcon,
@@ -8,28 +20,13 @@ import {
   YoutubeIcon,
   PhoneIcon,
   MailIcon,
-  ContactInfo1,
-  ContactInfo2,
-  Text,
-  MobileSectionNavbar,
-  Section2logo,
-  NavItem,
-  Section2NavItems,
-  DesktopNavContainer,
   Menu,
   Sidebar,
-  NavContainer,
-  HeaderContainer,
-  IconSection,
   CloseButton,
-  Logo,
-  LogoDesktop,
-  AboutSection,
-  AboutTitle,
-  ContactContainer,
 } from "./HeaderStyledComponents";
 
-const Header = () => {
+
+const MainHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -41,8 +38,8 @@ const Header = () => {
   };
 
   return (
-    <>
-      <HeaderContainer>
+    <div>
+      <Section1>
         <IconSection>
           <LinkedinIcon />
           <FacebookIcon />
@@ -60,11 +57,11 @@ const Header = () => {
             <Text>care@prabisha.co.uk</Text>
           </ContactInfo2>
         </ContactContainer>
-      </HeaderContainer>
-      <NavContainer>
-        <MobileSectionNavbar>
-          <Section2logo href="prabisha.co.uk">
-            <Logo
+      </Section1>
+      <MobileSectionNavbar>
+          <Section2logo href="/">
+            <Imagelogo
+              className="logo"
               src="https://www.prabisha.co.uk/wp-content/uploads/2022/09/PC-Logo-NEW-for-Website-Page-PNG-1-300x140.png"
               alt="logo"
             />
@@ -73,61 +70,61 @@ const Header = () => {
           <Sidebar style={{ width: isOpen ? "250px" : "0" }}>
             <CloseButton onClick={closeMenu}>×</CloseButton>
 
-            <Link to="/">
+            <LinkItem to="/">
               <NavItem>HOME</NavItem>
-            </Link>
-            <Link to="/services">
+            </LinkItem>
+            <LinkItem to="/services">
               <NavItem>SERVICES</NavItem>
-            </Link>
-            <Link to="/portfolio">
+            </LinkItem>
+            <LinkItem to="/portfolio">
               <NavItem>PORTFOLIO</NavItem>
-            </Link>
-            <Link to="/blogs">
+            </LinkItem>
+
+            <LinkItem to="/blogs">
               <NavItem>BLOG</NavItem>
-            </Link>
-            <Link to="/about">
+            </LinkItem>
+            <LinkItem to="/about">
               <NavItem>ABOUT</NavItem>
-            </Link>
-            <Link to="/contact">
+            </LinkItem>
+            <LinkItem to="/contact">
               <NavItem>CONTACT</NavItem>
-            </Link>
+            </LinkItem>
           </Sidebar>
         </MobileSectionNavbar>
-        <DesktopNavContainer>
-          <Section2logo href="prabisha.co.uk">
-            <LogoDesktop
+        <Section21>
+          <Section2logo href="/">
+            <Imagelogo
+              className="logo"
               src="https://www.prabisha.co.uk/wp-content/uploads/2022/09/PC-Logo-NEW-for-Website-Page-PNG-1-300x140.png"
               alt="logo"
             />
           </Section2logo>
           <Section2NavItems>
-            <Link to="/">
+            <LinkItem to="/">
               <NavItem>HOME</NavItem>
-            </Link>
-            <Link to="/services">
+            </LinkItem>
+            <LinkItem to="/services">
               <NavItem>SERVICES</NavItem>
-            </Link>
-            <Link to="/portfolio">
+            </LinkItem>
+            <LinkItem to="/portfolio">
               <NavItem>PORTFOLIO</NavItem>
-            </Link>
-
-            <Link to="/blogs">
+            </LinkItem>
+            <LinkItem to="/blogs">
               <NavItem>BLOG</NavItem>
-            </Link>
-            <Link to="/about">
+            </LinkItem>
+            <LinkItem to="/about">
               <NavItem>ABOUT</NavItem>
-            </Link>
-            <Link to="/contact">
+            </LinkItem>
+            <LinkItem to="/contact">
               <NavItem>CONTACT</NavItem>
-            </Link>
+            </LinkItem>
+            <LinkItem to="/">
+              <NavItem>LOGIN</NavItem>
+            </LinkItem>
           </Section2NavItems>
-        </DesktopNavContainer>
-        <AboutSection>
-          <AboutTitle>DIGITAL MARKETING SERVICES</AboutTitle>
-        </AboutSection>
-      </NavContainer>
-    </>
-  );
-};
+        </Section21>
+    </div>
+  )
+}
 
-export default Header;
+export default MainHeader
