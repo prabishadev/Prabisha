@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AiOutlineArrowRight } from "react-icons/ai";
 import {
   Section1,
   IconSection,
@@ -119,7 +120,7 @@ const MainHeader = () => {
               <NavItem>CONTACT</NavItem>
             </LinkItem>
             <LinkItem to="/">
-              <NavItem>LOGIN</NavItem>
+              <NavItem>LOGIN <AiOutlineArrowRight/></NavItem>
             </LinkItem>
           </Section2NavItems>
         </Section21>

@@ -16,7 +16,7 @@ export const Section1 = styled.div`
   display: flex;
   background-color: #c99b3b;
   justify-content: space-between;
-  height:35px;
+  height:27px;
   padding:10px;
   align-items: center;
   @media screen and (max-width: 768px) {
@@ -25,15 +25,15 @@ export const Section1 = styled.div`
 `;
 
 export const LinkedinIcon = styled(ImLinkedin2)`
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
 `;
 export const FacebookIcon = styled(BsFacebook)`
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
@@ -60,47 +60,47 @@ export const Sidebar = styled.div`
 `;
 
 export const TwitterIcon = styled(BsTwitter)`
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
 `;
 
 export const YoutubeIcon = styled(BsYoutube)`
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
 `;
 
 export const PhoneIcon = styled(BsFillTelephoneFill)`
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
 `;
 export const FaBarsIcon = styled(FaBars)`
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
 `;
 
 export const MailIcon = styled(AiOutlineMail)`
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
 `;
 
 export const InstagramIcon = styled(BsInstagram)`
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
@@ -135,7 +135,7 @@ export const CloseButton = styled.button`
 
 export const Text = styled.h4`
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
 `;
 
@@ -147,7 +147,7 @@ export const Section21 = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:15px 15px 15px 30px;
+  padding:10px 15px 10px 30px;
   -webkit-box-shadow: 0 10px 10px -10px #000000;
   -moz-box-shadow: 0 10px 10px -10px #000000;
   box-shadow: 0 10px 10px -10px #000000;
@@ -162,11 +162,14 @@ export const Section2logo = styled.a`
   padding:10px;
 `;
 export const Imagelogo = styled.img`
-  height:5rem;
-  width:10rem;
+  height:4rem;
+  width:8rem;
 `;
 export const LinkItem = styled(Link)`
   text-decoration:none;
+  &:hover{
+    color:#c99b3b;
+  }
 `;
 
 export const Section2NavItems = styled.div`
@@ -176,13 +179,13 @@ export const Section2NavItems = styled.div`
   text-decoration:none;
 `;
 export const NavItem = styled.h1`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #000;
   font-size: 1rem;
   margin: 10px;
   font-weight: 500;
-  &:hover{
-    color:#c99b3b;
-  }
   @media (max-width:768px){
     color:#fff;
   }
