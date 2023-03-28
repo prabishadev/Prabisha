@@ -91,7 +91,7 @@ export const AYGInput = styled.input`
   padding: 10px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   outline: 0;
   width: 90%;
   background-color: transparent;
