@@ -14,6 +14,11 @@ export const PortfolioHead = styled.div`
   font-size:3rem;
   font-weight:bold;
   margin-bottom:none;
+  @media(max-width:768px){
+    background-image:url("https://img.freepik.com/free-photo/color-squares-arrangement-top-view_23-2149345116.jpg?size=626&ext=jpg");
+    background-size:cover;
+    color:#fff;
+  }
 `;
 export const TabsAndImagesCont = styled.div`
   background-color: #e6e7e8;

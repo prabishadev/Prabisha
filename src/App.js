@@ -18,7 +18,7 @@ const App = () => (
       <Route path="/portfolio" Component={PortfolioPage} />
       <Route path="/services" Component={Services} />
     </Routes>
-    <Footer />
+    <Footer/>
   </>
 );
 

@@ -24,7 +24,7 @@ export const FaBarsIcon = styled(FaBars)`
   color: #fff;
 `;
 export const Section1 = styled.div`
-  background-image: url("https://res.cloudinary.com/dg0telgxq/image/upload/v1679971185/contact-us-message-landing-page-260nw-765294985_gldxop.webp");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://res.cloudinary.com/dg0telgxq/image/upload/v1679971185/contact-us-message-landing-page-260nw-765294985_gldxop.webp");
   height: 73vh;
   background-size: cover;
   opacity: 0.9;
@@ -135,7 +135,7 @@ export const ContactHeading = styled.h1`
   color: #fff;
   font-family: "Raleway", Sans-serif;
   font-size: 45px;
-  font-weight: 300;
+  font-weight:bold;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -392,7 +392,8 @@ export const Section4M = styled.div`
   padding: 20px 0px 20px 0px;
   background-color: #0b034f;
   height: 40vh;
-  margin-bottom:20px;
+  margin: 30px 20px 30px 20px ;
+  border-radius:20px;
   @media screen and (max-width: 768px) {
     min-height:130vh;
     display: flex;
@@ -432,7 +433,7 @@ export const Section41M1 = styled.div`
   margin-top: -40px;
 `;
 export const Section42M = styled.div`
-  margin: 10px;
+  margin:10px 30px 10px 10px;
   width: 30%;
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -469,6 +470,8 @@ align-items: center;
 padding: 20px 0px 20px 0px;
 background-color: #0b034f;
 height: 40vh;
+margin: 0 20px 20px 20px ;
+border-radius:20px;
 @media screen and (max-width: 768px) {
   min-height:130vh;
   display: flex;
@@ -488,7 +491,7 @@ export const Section51M = styled.div`
 `;
 
 export const Section52M = styled.div`
-  margin: 10px;
+  margin: 10px 20px 10px 20px;
   width: 30%;
   @media screen and (max-width: 768px) {
     width: 100%;

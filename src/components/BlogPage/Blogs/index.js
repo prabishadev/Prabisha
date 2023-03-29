@@ -1,6 +1,7 @@
 import { BlogsContainer } from "./BlogsStyledComponents";
 import BlogItem from "../BlogItem";
 import MainHeader from "../../MainHeader";
+
 const BlogDetails = [
   {
     id: 21,
@@ -96,15 +97,14 @@ const BlogDetails = [
   },
 ];
 console.log(BlogDetails);
-
 const Blogs = () => (
   <>
-    <MainHeader />
-    <BlogsContainer>
-      {BlogDetails.map((eachBlog) => (
-        <BlogItem key={eachBlog.index} data={eachBlog} />
-      ))}
-    </BlogsContainer>
+  <MainHeader/>
+  <BlogsContainer>
+    {BlogDetails.map((eachBlog) => (
+      <BlogItem key={eachBlog.index} data={eachBlog} />
+    ))}
+  </BlogsContainer>
   </>
 );
 
