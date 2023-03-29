@@ -7,7 +7,7 @@ export const FooterMainContainer = styled.div`
 `;
 export const FirstContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
   flex-grow: 0;

@@ -17,7 +17,7 @@ export const Section1 = styled.div`
   background-color: #c99b3b;
   justify-content: space-between;
   height:27px;
-  padding:10px;
+  padding:6px;
   align-items: center;
   @media screen and (max-width: 768px) {
     display: none;
@@ -147,7 +147,7 @@ export const Section21 = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:10px 15px 10px 30px;
+  padding:6px 15px 6px 30px;
   text-decoration:none;
   -webkit-box-shadow: 0 10px 10px -10px #000000;
   -moz-box-shadow: 0 10px 10px -10px #000000;
@@ -198,16 +198,19 @@ export const NavItem = styled.h1`
 export const BtnItem = styled.button`
   color: #fff;
   font-size: 0.8rem;
-  margin: 10px;
+  margin: 10px 30px 10px 30px; 
   font-weight: 500;
-  text-decoration:none;
-  border:none;
-  background-color: #c99b3b;
   border-radius:10px;
+  text-decoration:none;
+  border:1px solid #ff5e00;
+  background-color: #f27e3a;
   padding:12px;
   cursor:pointer;
   @media (max-width:768px){
     color:#fff;
+  }
+  &:hover{
+    
   }
 `;
 

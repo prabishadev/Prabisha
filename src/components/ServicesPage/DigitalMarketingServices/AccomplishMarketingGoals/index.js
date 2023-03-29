@@ -1,6 +1,8 @@
-import { AMGContainer, AMGTitle, AMGDescription } from "./AMGStyledComponents";
+import { AMGContainer, AMGTitle, AMGDescription,ServicesBanner } from "./AMGStyledComponents";
 
 const AccomplishMarketingGoals = () => (
+  <>
+   <ServicesBanner>OUR SERVICES</ServicesBanner>
   <AMGContainer>
     <AMGTitle>
       Accomplish Marketing Goals With 360 Digital Marketing Services
@@ -14,6 +16,7 @@ const AccomplishMarketingGoals = () => (
       competitive market.
     </AMGDescription>
   </AMGContainer>
+  </>
 );
 
 export default AccomplishMarketingGoals;

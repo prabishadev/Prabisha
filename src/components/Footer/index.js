@@ -89,168 +89,77 @@ const Footer = () => {
         <LinksContainer>
           <LinksText>Quick Links</LinksText>
           <Link
-            href="https://www.prabisha.co.uk/"
-            target="_blank"
+            href="/"
+            target="_self"
             rel="noreferrer"
           >
             <FaCaretRight /> Home
           </Link>
           <Link
-            href="https://www.prabisha.co.uk/about/"
-            target="_blank"
+            href="/about"
+            target="_self"
             rel="noreferrer"
           >
             <FaCaretRight /> About
           </Link>
           <Link
-            href="https://www.prabisha.co.uk/contact/"
-            target="_blank"
+            href="/contact"
+            target="_self"
             rel="noreferrer"
           >
             <FaCaretRight /> Contact
           </Link>
           <Link
-            href="https://www.prabisha.co.uk/payment/"
-            target="_blank"
+            href="/"
+            target="_self"
             rel="noreferrer"
           >
             <FaCaretRight /> Payment
           </Link>
           <Link
-            href="https://www.prabisha.co.uk/site-map/"
-            target="_blank"
+            href="/"
+            target="_self"
             rel="noreferrer"
           >
             <FaCaretRight /> Site Map
           </Link>
         </LinksContainer>
         <LinksContainer>
-          <LinksText>Important Links</LinksText>
+          <LinksText>Services</LinksText>
           <Link
-            href="https://www.prabisha.co.uk/website-development/"
-            target="_blank"
+            href="/services"
+            target="_self"
             rel="noreferrer"
           >
             <FaCaretRight /> Website Design
           </Link>
           <Link
-            href="https://www.prabisha.co.uk/digital-marketing-services/"
-            target="_blank"
+            href="/services"
+            target="_self"
             rel="noreferrer"
           >
             <FaCaretRight /> Digital Marketing
           </Link>
           <Link
-            href="https://www.prabisha.co.uk/contact/"
-            target="_blank"
+            href="/services"
+            target="_self"
             rel="noreferrer"
           >
             <FaCaretRight /> Google Ads
           </Link>
           <Link
-            href="https://www.prabisha.co.uk/logo-design-services/"
-            target="_blank"
+            href="/services"
+            target="_self"
             rel="noreferrer"
           >
             <FaCaretRight /> Graphic Designing
           </Link>
           <Link
-            href="https://www.prabisha.co.uk/photo-editing/"
-            target="_blank"
+            href="/services"
+            target="_self"
             rel="noreferrer"
           >
             <FaCaretRight /> Photo Editing
-          </Link>
-        </LinksContainer>
-        <LinksContainer>
-          <LinksText>Digital Marketing Company in UK</LinksText>
-          <Link
-            href="https://www.prabisha.co.uk/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaCaretRight /> London
-          </Link>
-          <Link
-            href="https://www.prabisha.co.uk/digital-marketing-agency-in-birmingham/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaCaretRight /> Birmingham
-          </Link>
-          <Link
-            href="https://www.prabisha.co.uk/digital-marketing-agency-in-edinburgh/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaCaretRight /> Edinburgh
-          </Link>
-          <Link
-            href="https://www.prabisha.co.uk/digital-marketing-agency-in-manchester/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaCaretRight /> Manchester
-          </Link>
-          <Link
-            href="https://www.prabisha.co.uk/digital-marketing-agency-in-harrow/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaCaretRight /> Harrow
-          </Link>
-          <Link
-            href="https://www.prabisha.co.uk/digital-marketing-agency-in-stanmore/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaCaretRight /> Stanmore
-          </Link>
-        </LinksContainer>
-        <LinksContainer>
-          <LinksText>Website Design Company in UK</LinksText>
-          <Link
-            href="https://www.prabisha.co.uk/website-development/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaCaretRight /> London
-          </Link>
-          <Link
-            href="https://www.prabisha.co.uk/web-design-company-birmingham/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            <FaCaretRight /> Birmingham
-          </Link>
-          <Link
-            href="https://www.prabisha.co.uk/web-design-company-edinburgh/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaCaretRight /> Edinburgh
-          </Link>
-          <Link
-            href="https://www.prabisha.co.uk/web-design-company-manchester/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaCaretRight /> Manchester
-          </Link>
-          <Link
-            href="https://www.prabisha.co.uk/web-development-company-harrow/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaCaretRight /> Harrow
-          </Link>
-          <Link
-            href="https://www.prabisha.co.uk/web-design-company-stanmore/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaCaretRight /> Stanmore
           </Link>
         </LinksContainer>
         <LinksContainer>

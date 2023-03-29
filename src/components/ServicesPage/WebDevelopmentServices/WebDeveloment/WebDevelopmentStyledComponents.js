@@ -3,82 +3,6 @@ import styled from "styled-components";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 
-import { FaBars } from "react-icons/fa";
-
-export const MobileSectionNavbar = styled.div`
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-`;
-export const Logo = styled.img`
-width:250px;
-@media screen and (max-width:768px){
-    width:100px;
-`;
-export const FaBarsIcon = styled(FaBars)`
-  font-size: 18px;
-  color: #fff;
-`;
-export const Section1 = styled.div`
-  background-image: url("https://www.prabisha.co.uk/wp-content/uploads/2022/10/6-PC-UK-Website-Banner-CONTACT-scaled.jpg");
-  height: 73vh;
-  background-size: cover;
-  opacity: 0.9;
-  padding: 30px;
-  max-width: 100%;
-  @media screen and (max-width: 768px) {
-    height: 25vh;
-  }
-`;
-export const Section12 = styled.div`
-  display: flex;
-  justify-content: space-around;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const Section2logo = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-export const Section2NavItems = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-export const NavItem = styled.h1`
-  color: #fff;
-  font-size: 20px;
-  margin: 10px;
-`;
-export const HeadingContainer = styled.div`
-  margin-top: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 768px) {
-    margin-top: 70px;
-  }
-`;
-
-export const Heading = styled.h1`
-  color: #fff;
-  font-family: "Raleway", Sans-serif;
-  font-size: 45px;
-  text-align: center;
-  font-weight: 300;
-  text-transform: uppercase;
-  line-height: 1.3;
-  margin: 0;
-  @media (max-width: 768px) {
-    font-size: 20px;
-  }
-`;
 
 export const Section2M = styled.div`
   height: 40%;
@@ -87,7 +11,7 @@ export const Section2M = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 0px;
+  padding: 100px;
   max-width: 100%;
   @media screen and (max-width: 768px) {
     min-height: 50%;

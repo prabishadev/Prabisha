@@ -14,6 +14,6 @@ export const PSTitle = styled.h1`
 `;
 
 export const PSImage = styled.img`
-  height: 400px;
+  height: 300px;
   width: 100%;
 `;

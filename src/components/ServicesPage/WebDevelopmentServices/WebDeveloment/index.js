@@ -1,14 +1,4 @@
 import {
-  MobileSectionNavbar,
-  Logo,
-  Section2logo,
-  FaBarsIcon,
-  Section1,
-  Section2NavItems,
-  NavItem,
-  Section12,
-  Heading,
-  HeadingContainer,
   Section2M,
   Section2MInfo1Container,
   Section2MInfo1,
@@ -46,37 +36,6 @@ import {
 const WebsiteDevelopmentSection = () => {
   return (
     <>
-      <Section1>
-        <MobileSectionNavbar>
-          <Section2logo href="prabisha.co.uk">
-            <Logo
-              src="https://www.prabisha.co.uk/wp-content/uploads/2022/09/PC-Logo-NEW-for-Website-Page-PNG-1-300x140.png"
-              alt="logo"
-            />
-          </Section2logo>
-          <FaBarsIcon />
-        </MobileSectionNavbar>
-        <Section12>
-          <Section2logo href="prabisha.co.uk">
-            <Logo
-              src="https://www.prabisha.co.uk/wp-content/uploads/2022/09/PC-Logo-NEW-for-Website-Page-PNG-1-300x140.png"
-              alt="logo"
-            />
-          </Section2logo>
-          <Section2NavItems>
-            <NavItem>HOME</NavItem>
-            <NavItem>SERVICES</NavItem>
-            <NavItem>PORTFOLIO</NavItem>
-            <NavItem>CASE STUDIES</NavItem>
-            <NavItem>BLOG</NavItem>
-            <NavItem>ABOUT</NavItem>
-            <NavItem>CONTACT</NavItem>
-          </Section2NavItems>
-        </Section12>
-        <HeadingContainer>
-          <Heading>WEBSITE DEVELOPMENT & DESIGN</Heading>
-        </HeadingContainer>
-      </Section1>
       <Section2M>
         <Section2MInfo1Container>
           <Section2MInfo1>
