@@ -7,6 +7,7 @@ import BlogPage from "./components/BlogPage";
 import Services from "./components/ServicesPage";
 import PortfolioPage from "./components/PortfolioPage";
 import Footer from "./components/Footer";
+import Login from "./components/Login";
 
 const App = () => (
   <>
@@ -17,8 +18,9 @@ const App = () => (
       <Route path="/blogs" Component={BlogPage} />
       <Route path="/portfolio" Component={PortfolioPage} />
       <Route path="/services" Component={Services} />
+      <Route path="/login" Component={Login} />
     </Routes>
-    <Footer/>
+    <Footer />
   </>
 );
 
