@@ -88,10 +88,10 @@ const MainHeader = () => {
           <LinkItem to="/contact">
             <NavItem>CONTACT</NavItem>
           </LinkItem>
-          <LinkItem to="/">
+          <LinkItem to="/register">
             <NavItem>REGISTER</NavItem>
           </LinkItem>
-          <LinkItem to="/">
+          <LinkItem to="/login">
             <NavItem>
               LOGIN <AiOutlineArrowRight />
             </NavItem>

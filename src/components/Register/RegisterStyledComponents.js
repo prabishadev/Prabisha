@@ -96,7 +96,7 @@ export const Button = styled.button`
   border-radius: 15px;
   background: #ffffff;
   @media screen and (max-width: 767px) {
-    width: 95%;
+    width: 200px;
   }
 `;
 
