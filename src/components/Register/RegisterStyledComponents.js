@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const LoginContainer = styled.div`
   background-image: url("https://res.cloudinary.com/dg0telgxq/image/upload/v1680081328/blurry-gradient-haikei_1_xukx0u.svg");
   height: 100vh;
@@ -15,7 +15,7 @@ export const LoginContainer = styled.div`
   }
 `;
 
-export const LoginForm = styled.div`
+export const LoginForm = styled.form`
   display: flex;
   flex-direction: column;
   padding: 15px;
@@ -81,12 +81,13 @@ export const Input = styled.input`
 `;
 export const ButtonContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
 export const Button = styled.button`
-  width: 90%;
+  width: 500px;
   height: 45px;
   font-weight: bold;
   border: none;
@@ -100,4 +101,25 @@ export const Button = styled.button`
   @media screen and (max-width: 767px) {
     width: 95%;
   }
+`;
+
+export const Button2 = styled.button`
+  width: 500px;
+  height: 45px;
+  font-weight: bold;
+  border: none;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  margin-top: 15px;
+
+  border-radius: 15px;
+  background: #ffffff;
+  @media screen and (max-width: 767px) {
+    width: 95%;
+  }
+`;
+
+export const LinkItem = styled(Link)`
+  text-decoration: none;
 `;

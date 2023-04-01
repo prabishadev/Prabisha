@@ -1,5 +1,10 @@
 import ContactSection from "./Contact";
-
-const ContactPage = () => <ContactSection />;
+import Footer from "../Footer";
+const ContactPage = () => (
+  <>
+    <ContactSection />
+    <Footer />
+  </>
+);
 
 export default ContactPage;

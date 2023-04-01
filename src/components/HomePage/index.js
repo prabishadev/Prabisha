@@ -5,6 +5,7 @@ import DigitalMarketingAgencyLondon from "./DigitalMarketingAgencyLondon";
 import HighQualityDigitalGrowthSolutions from "./HighQualityDigitalGrowthSolutions";
 import CountSection from "./CountSection";
 import ServicesCards from "./ServicesCards";
+import Footer from "../Footer";
 import BottomSection from "./BottomSection";
 
 const HomePage = () => (
@@ -17,6 +18,7 @@ const HomePage = () => (
     <CountSection />
     <ServicesCards />
     <BottomSection />
+    <Footer />
   </>
 );
 

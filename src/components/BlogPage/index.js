@@ -1,5 +1,10 @@
 import Blogs from "./Blogs";
-
-const BlogPage = () => <Blogs />;
+import Footer from "../Footer";
+const BlogPage = () => (
+  <>
+    <Blogs />
+    <Footer />
+  </>
+);
 
 export default BlogPage;

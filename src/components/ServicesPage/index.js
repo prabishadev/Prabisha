@@ -1,11 +1,13 @@
 import DigitalMarketing from "./DigitalMarketingServices";
 import WebDevelopmentServices from "./WebDevelopmentServices";
 import MainHeader from "../MainHeader";
+import Footer from "../Footer";
 const Services = () => (
   <>
-    <MainHeader/>
+    <MainHeader />
     <DigitalMarketing />
     <WebDevelopmentServices />
+    <Footer />
   </>
 );
 

@@ -15,6 +15,9 @@ specifiers:
   slick-carousel: ^1.8.1
   styled-components: ^5.3.9
   swiper: ^9.1.1
+  typeface-muli: ^1.1.13
+  typeface-open-sans: ^1.1.13
+  typeface-pacifico: ^1.1.13
   typeface-raleway: ^1.1.13
   typeface-roboto: ^1.1.13
   uuid: ^9.0.0
@@ -35,6 +38,9 @@ dependencies:
   slick-carousel: 1.8.1
   styled-components: 5.3.9_react-dom@18.2.0+react@18.2.0
   swiper: 9.1.1
+  typeface-muli: 1.1.13
+  typeface-open-sans: 1.1.13
+  typeface-pacifico: 1.1.13
   typeface-raleway: 1.1.13
   typeface-roboto: 1.1.13
   uuid: 9.0.0
@@ -9735,6 +9741,18 @@ packages:
     resolution: {integrity: sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==}
     dependencies:
       is-typedarray: 1.0.0
+    dev: false
+
+  /typeface-muli/1.1.13:
+    resolution: {integrity: sha512-FrbDCi7OKz6Mg8oK3bwAg3OTy3sGHXqb3ekSnOyHhvVCfSF/aiRTjv/KE5RJ1CfddhYDlBuTCQFNUfOOSlHObw==}
+    dev: false
+
+  /typeface-open-sans/1.1.13:
+    resolution: {integrity: sha512-lVGVHvYl7UJDFB9vN8r7NHw3sVm7Rjeow6b9AeABc/J+2mDaCkmcdVtw3QZnsJW39P+xm5zeggIj9gLHYGn9Iw==}
+    dev: false
+
+  /typeface-pacifico/1.1.13:
+    resolution: {integrity: sha512-lgKQ1PgSOpeekdMsdm/9Ox0R0qMqhd95H654T/vwJk7gicSfM/fFvq94KldcEOSh00FOHmRJSS30roEoDe+u+Q==}
     dev: false
 
   /typeface-raleway/1.1.13:

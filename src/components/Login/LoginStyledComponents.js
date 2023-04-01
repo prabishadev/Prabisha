@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const LoginContainer = styled.div`
   background-image: url("https://res.cloudinary.com/dg0telgxq/image/upload/v1680081328/blurry-gradient-haikei_1_xukx0u.svg");
@@ -8,6 +9,10 @@ export const LoginContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const LinkItem = styled(Link)`
+  text-decoration: none;
 `;
 
 export const LoginForm = styled.form`

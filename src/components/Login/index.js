@@ -1,5 +1,6 @@
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
+
 import axios from "axios";
 
 import {
@@ -9,13 +10,13 @@ import {
   Heading,
   Label,
   InputContainer,
+  LinkItem,
   LoginButton,
 } from "./LoginStyledComponents";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  //   const history = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -28,32 +29,16 @@ const Login = () => {
         email,
         password,
       });
-      console.log(response.data);
-      if (response.data.message === "User authenticated successfully") {
+      if (response.data.status === 200) {
         alert("Login Success");
+        <Navigate to="/lms" />;
       } else {
         alert("Login Failed");
+        <Navigate to="/register" />;
       }
     } catch (error) {
       console.log(error.response.data);
     }
-
-    // const options = {
-    //   method: "POST",
-    //   mode: "no-cors",
-    //   body: JSON.stringify(userDetails),
-    // };
-    // console.log(options.body);
-    // const response = await fetch(url, options);
-    // const data = await response.json();
-    // console.log(response);
-    // console.log(data);
-
-    // if (response.ok) {
-    //   alert("Login Success");
-    // } else {
-    //   alert("Login Failed");
-    // }
   };
 
   return (
@@ -80,7 +65,9 @@ const Login = () => {
         <LoginButton type="submit" onClick={handleSubmit}>
           Login
         </LoginButton>
-        <LoginButton>Create an Account</LoginButton>
+        <LinkItem to="/register">
+          <LoginButton>Create an Account</LoginButton>
+        </LinkItem>
       </LoginForm>
     </LoginContainer>
   );
