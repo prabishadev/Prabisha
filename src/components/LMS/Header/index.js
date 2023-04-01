@@ -38,7 +38,7 @@ const Header = () => {
           />
         </MobileProfileIconContainer>
         <ButtonContainer onClick={handleClick}>
-          <Handlers>{clicked ? <Bars /> : <Close />}</Handlers>>
+          <Handlers>{clicked ? <Bars /> : <Close />}</Handlers>
         </ButtonContainer>
       </MobileHeader>
       <HeaderContainer isClicked={clicked}>

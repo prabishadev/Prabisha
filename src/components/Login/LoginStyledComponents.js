@@ -18,11 +18,11 @@ export const LinkItem = styled(Link)`
 export const LoginForm = styled.form`
   display: flex;
   flex-direction: column;
-  padding: 25px;
+  padding: 55px;
   background-color: #07182e;
   width: 400px;
   min-height: 400px;
-  border-radius: 50px 0 50px 0;
+  border-radius: 20px;
   @media screen and (max-width: 767px) {
     padding: 25px;
     width: 300px;
@@ -51,7 +51,7 @@ export const Input = styled.input`
   margin-bottom: 15px;
   height: 30px;
   padding: 10px;
-  border-radius: 0 10px 0 10px;
+  border-radius: 10px;
   border: none;
 `;
 

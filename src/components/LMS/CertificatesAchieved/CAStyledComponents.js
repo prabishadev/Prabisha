@@ -3,7 +3,6 @@ import "typeface-pacifico";
 
 export const CardContainer = styled.div`
   border: 1px solid red;
-  margin: 70px;
   border-radius: 4px;
   padding: 16px;
   display: flex;
@@ -16,7 +15,6 @@ export const CertificateTitle = styled.h2`
   display: flex;
   font-family: "Roboto";
   text-align: center;
-
   align-items: center;
 `;
 

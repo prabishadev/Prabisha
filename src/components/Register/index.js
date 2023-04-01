@@ -8,7 +8,6 @@ import {
   Input,
   Heading,
   Label,
-  Button2,
   InputContainer,
   LinkItem,
   Cont,
@@ -47,10 +46,10 @@ const Register = () => {
       console.log(response.data);
       if (response.data.status === 200) {
         alert("Registration Success");
-        history.push("/login");
+        history("/lms-available");
       } else {
         alert("Registration  Failed");
-        history.push("/register");
+        history("/register");
       }
     } catch (error) {
       console.log(error.response.data);
@@ -153,7 +152,7 @@ const Register = () => {
             Create Account
           </Button>
           <LinkItem to="/login">
-            <Button2>Login</Button2>
+            <Button>Login</Button>
           </LinkItem>
         </ButtonContainer>
       </LoginForm>

@@ -14,6 +14,7 @@ export const ACContainer = styled.div`
 export const ACTitle = styled.h1`
   font-family: "Open Sans", sans-serif;
   text-align: center;
+  margin-top:100px;
 `;
 
 export const TabContainer = styled.div`

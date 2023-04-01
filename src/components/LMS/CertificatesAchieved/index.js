@@ -1,7 +1,6 @@
 import React from "react";
 import {
   CardContainer,
-  NCContainer,
   CertificateTitle,
   Cup,
   CertificateCard,
@@ -19,10 +18,7 @@ const certificateTitles = [
   },
 ];
 
-const noCertificatesView = () => <NCContainer>b</NCContainer>;
-
 const CertificatesAchieved = () => {
-  if (certificateTitles.length !== 0) {
     return (
       <>
         <Header />
@@ -39,9 +35,6 @@ const CertificatesAchieved = () => {
         </CardContainer>
       </>
     );
-  } else {
-    return noCertificatesView();
-  }
 };
 
 export default CertificatesAchieved;

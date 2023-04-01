@@ -113,12 +113,6 @@ export const NavItem = styled.li`
   white-space: nowrap;
   border-bottom: 3px solid #ffffff;
   cursor: pointer;
-  ${({ active }) =>
-        active &&
-        `
-    border-bottom: 2px solid blue;
-    color:blue;
-  `}
 `;
 
 export const ProfileIconContainer = styled.div`

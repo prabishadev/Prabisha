@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import axios from "axios";
 
@@ -15,6 +15,7 @@ import {
 } from "./LoginStyledComponents";
 
 const Login = () => {
+  const navigate = useNavigate()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -31,10 +32,10 @@ const Login = () => {
       });
       if (response.data.status === 200) {
         alert("Login Success");
-        <Navigate to="/lms" />;
+        navigate("/lms-available");
       } else {
         alert("Login Failed");
-        <Navigate to="/register" />;
+        navigate("/register" );
       }
     } catch (error) {
       console.log(error.response.data);
@@ -44,7 +45,7 @@ const Login = () => {
   return (
     <LoginContainer>
       <LoginForm onSubmit={handleSubmit}>
-        <Heading>Sign In</Heading>
+        <Heading>Login</Heading>
         <InputContainer>
           <Label htmlFor="email">Email</Label>
           <Input
@@ -57,7 +58,7 @@ const Login = () => {
           <Label htmlFor="password">Password</Label>
           <Input
             id="password"
-            type="text"
+            type="password"
             placeholder="Enter Password"
             onChange={(event) => setPassword(event.target.value)}
           />
