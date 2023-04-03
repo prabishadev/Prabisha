@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Header from "../../Header";
+
 import {
   CourseContentContainer,
   CourseImage,
   ConceptTitle,
   ConceptDescription,
+  LinkItem,
   DownloadCertificate,
   BtnContainer,
   CountContainer,
@@ -245,6 +248,7 @@ const Ajax = () => {
 
   return (
     <React.Fragment>
+      <Header />
       <CourseContentContainer>
         {showDocument && (
           <>
@@ -302,7 +306,9 @@ const Ajax = () => {
             )}
             <FailedMessage>{showFailed}</FailedMessage>
             <Link to="/lms-available">
-              <StartExam>Back</StartExam>
+              <StartExam>
+                <LinkItem to="/lms-available">Back</LinkItem>
+              </StartExam>
             </Link>
           </ExamContainer>
         )}

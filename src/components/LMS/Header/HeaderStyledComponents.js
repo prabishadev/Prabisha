@@ -162,3 +162,37 @@ export const Profile = styled.img`
 export const LinkItem = styled(Link)`
   text-decoration: none;
 `;
+
+export const LogoutBtn = styled.button`
+  border: 1px solid #8a8136;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+`;
+
+export const LogoutBtnMobile = styled.button`
+  border: none;
+  background: none;
+  font-family: "Muli", sans-serif;
+  height: 50px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 0.18px;
+  position: relative;
+  white-space: nowrap;
+  border-bottom: 3px solid #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;

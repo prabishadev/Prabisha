@@ -40,6 +40,13 @@ export const InputContainer = styled.div`
   flex-direction: column;
 `;
 
+export const Loader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40vh;
+`;
+
 export const Label = styled.label`
   color: #fff;
   font-size: 25px;

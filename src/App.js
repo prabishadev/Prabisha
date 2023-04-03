@@ -6,9 +6,10 @@ import ContactPage from "./components/ContactPage";
 import BlogPage from "./components/BlogPage";
 import Services from "./components/ServicesPage";
 import PortfolioPage from "./components/PortfolioPage";
+import TypoGraphy from "./components/LMS/Courses/TypoGraphy";
 import Login from "./components/Login";
 import Register from "./components/Register";
-
+import ColorTheory from "./components/LMS/Courses/ColorTheory";
 import AvailableCourses from "./components/LMS/AvailableCourses";
 import CertificatesAchieved from "./components/LMS/CertificatesAchieved";
 import ScoreSum from "./components/LMS/Score";
@@ -21,6 +22,11 @@ import Nodejs from "./components/LMS/Courses/Nodejs";
 import ReactCourse from "./components/LMS/Courses/ReactCourse";
 import ResponsiveWebDesign from "./components/LMS/Courses/ResponsiveWebDesign";
 import RestfulAPI from "./components/LMS/Courses/RestfulAPI";
+import LayoutDesign from "./components/LMS/Courses/LayoutDesign";
+import UIDesign from "./components/LMS/Courses/UIDesign";
+import UXDesign from "./components/LMS/Courses/UXDesign";
+import WireFraming from "./components/LMS/Courses/WireFraming";
+import Accessibility from "./components/LMS/Courses/Accessibility";
 
 import PremiumCourses from "./components/LMS/PremiumCourses";
 
@@ -51,6 +57,15 @@ const App = () => (
         path="/learn-Responsive-Web-Design"
         Component={ResponsiveWebDesign}
       />
+      <Route path="/learn-Color-Theory" Component={ColorTheory} />
+      <Route path="/learn-Typography" Component={TypoGraphy} />
+      <Route path="/learn-Responsive-Design" Component={ResponsiveWebDesign} />
+      <Route path="/learn-Layout-Design" Component={LayoutDesign} />
+      <Route path="/learn-User-Interface-Design" Component={UIDesign} />
+      <Route path="/learn-User-Experience-Design" Component={UXDesign} />
+      <Route path="/learn-Wireframing" Component={WireFraming} />
+      <Route path="/learn-Accessibility" Component={Accessibility} />
+      <Route path="/learn-Visual-Hierarchy" Component={Accessibility} />
     </Routes>
   </>
 );

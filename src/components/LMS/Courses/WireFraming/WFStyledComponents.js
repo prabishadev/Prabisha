@@ -12,10 +12,12 @@ export const CourseContentContainer = styled.div`
   padding-top: 20px;
   padding-bottom: 50px;
 `;
+
 export const LinkItem = styled(Link)`
   text-decoration: none;
   color: white;
 `;
+
 export const Download = styled(MdDownload)`
   height: 30px;
   width: 30px;

@@ -12,6 +12,7 @@ export const CourseContentContainer = styled.div`
   padding-top: 20px;
   padding-bottom: 50px;
 `;
+
 export const LinkItem = styled(Link)`
   text-decoration: none;
   color: white;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Header from "../../Header";
 
 import {
   CourseContentContainer,
@@ -7,6 +8,7 @@ import {
   ConceptDescription,
   DownloadCertificate,
   BtnContainer,
+  LinkItem,
   CountContainer,
   Score,
   QNSCount,
@@ -173,6 +175,7 @@ const Bootstrap = () => {
 
   return (
     <React.Fragment>
+      <Header />
       <CourseContentContainer>
         {showDocument && (
           <>
@@ -229,7 +232,9 @@ const Bootstrap = () => {
               </div>
             )}
             <FailedMessage>{showFailed}</FailedMessage>
-            <StartExam>Back</StartExam>
+            <StartExam>
+              <LinkItem to="/lms-available">Back</LinkItem>
+            </StartExam>
           </ExamContainer>
         )}
       </CourseContentContainer>

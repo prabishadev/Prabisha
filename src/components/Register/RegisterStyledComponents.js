@@ -103,3 +103,10 @@ export const Button = styled.button`
 export const LinkItem = styled(Link)`
   text-decoration: none;
 `;
+
+export const Loader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40vh;
+`;

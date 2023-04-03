@@ -2,6 +2,7 @@ import styled from "styled-components";
 import "typeface-raleway";
 import "typeface-roboto";
 import { MdDownload } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export const CourseContentContainer = styled.div`
   margin-left: 100px;
@@ -11,7 +12,10 @@ export const CourseContentContainer = styled.div`
   padding-top: 20px;
   padding-bottom: 50px;
 `;
-
+export const LinkItem = styled(Link)`
+  text-decoration: none;
+  color: white;
+`;
 export const Download = styled(MdDownload)`
   height: 30px;
   width: 30px;

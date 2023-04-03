@@ -1,230 +1,232 @@
 import React, { useState } from "react";
+import Header from "../../Header";
 
 import {
-    CourseContentContainer,
-    CourseImage,
-    ConceptTitle,
-    ConceptDescription,
-    DownloadCertificate,
-    BtnContainer,
-    CountContainer,
-    Score,
-    QNSCount,
-    ExamPassed,
-    Option,
-    StartExam,
-    Certificate,
-    FailedMessage,
-    ExamContainer,
-    Question,
-    ExamTitle,
+  CourseContentContainer,
+  CourseImage,
+  ConceptTitle,
+  ConceptDescription,
+  DownloadCertificate,
+  BtnContainer,
+  CountContainer,
+  Score,
+  LinkItem,
+  QNSCount,
+  ExamPassed,
+  Option,
+  StartExam,
+  Certificate,
+  FailedMessage,
+  ExamContainer,
+  Question,
+  ExamTitle,
 } from "./RWDStyledComponents";
 
 const questions = [
-    {
-        question: "What is Responsive Web Design?",
-        options: [
-            "A web design technique that allows websites to adapt to different screen sizes",
-            "A web design technique that makes websites look good on desktop computers",
-            "A web design technique that only works on mobile devices",
-            "A web design technique that allows websites to be downloaded faster",
-        ],
-        answer:
-            "A web design technique that allows websites to adapt to different screen sizes",
-    },
-    {
-        question:
-            "What is the difference between a responsive website and a mobile app?",
-        options: [
-            "A responsive website can be accessed through a mobile browser while a mobile app needs to be downloaded and installed",
-            "A mobile app is cheaper to develop than a responsive website",
-            "A mobile app is faster than a responsive website",
-            "A responsive website has more features than a mobile app",
-        ],
-        answer:
-            "A responsive website can be accessed through a mobile browser while a mobile app needs to be downloaded and installed",
-    },
-    {
-        question: "What is a viewport?",
-        options: [
-            "The visible area of a webpage",
-            "The code that makes a webpage responsive",
-            "The area where the logo is displayed on a webpage",
-            "The area where the navigation menu is displayed on a webpage",
-        ],
-        answer: "The visible area of a webpage",
-    },
-    {
-        question: "What is the purpose of media queries in responsive design?",
-        options: [
-            "To apply specific styles to different screen sizes",
-            "To make the website faster",
-            "To hide elements on smaller screens",
-            "To make the website more interactive",
-        ],
-        answer: "To apply specific styles to different screen sizes",
-    },
-    {
-        question: "What is a CSS breakpoint?",
-        options: [
-            "The point where a website breaks due to a coding error",
-            "The point where a website changes its layout based on screen size",
-            "The point where a website stops working on mobile devices",
-            "The point where a website changes its font size",
-        ],
-        answer: "The point where a website changes its layout based on screen size",
-    },
-    {
-        question: "What is the best way to test if a website is responsive?",
-        options: [
-            "Resize the browser window and see if the website adapts",
-            "Use a mobile device and see if the website looks good",
-            "Use a desktop computer and see if the website looks good",
-            "Ask other people if the website looks good",
-        ],
-        answer: "Resize the browser window and see if the website adapts",
-    },
-    {
-        question: "What is the role of the meta viewport tag in responsive design?",
-        options: [
-            "To set the width and initial scale of the viewport",
-            "To hide elements on smaller screens",
-            "To set the font size of the website",
-            "To apply specific styles to different screen sizes",
-        ],
-        answer: "To set the width and initial scale of the viewport",
-    },
-    {
-        question: "What is the purpose of the CSS max-width property?",
-        options: [
-            "To set a maximum width for an element",
-            "To set a minimum width for an element",
-            "To set the font size of an element",
-            "To hide an element on smaller screens",
-        ],
-        answer: "To set a maximum width for an element",
-    },
-    {
-        question: "What is the purpose of the CSS min-width property?",
-        options: [
-            "To set a minimum width for an element",
-            "To set a maximum width for an element",
-            "To set the font size of an element",
-            "To hide an element on smaller screens",
-        ],
-        answer: "To set a minimum width for an element",
-    },
-    {
-        question:
-            "What is the purpose of the CSS float property in responsive design?",
-        options: [
-            "To position elements side by side",
-            "To hide elements on smaller screens",
-            "To change the font size of an element",
-            "To set a maximum width for an element",
-        ],
-        answer: "To position elements side by side",
-    },
-    {
-        question:
-            "What is the purpose of the CSS clear property in responsive design?",
-        options: [
-            "To prevent elements from being positioned next to a floated element",
-            "To set a maximum width for an element",
-            "To hide elements on smaller screens",
-            "To change the font size of an element",
-        ],
-        answer:
-            "To prevent elements from being positioned next to a floated element",
-    },
-    {
-        question:
-            "What is the purpose of the CSS display property in responsive design?",
-        options: [
-            "To control the visibility of an element",
-            "To set a maximum width for an element",
-            "To hide elements on smaller screens",
-            "To change the font size of an element",
-        ],
-        answer: "To control the visibility of an element",
-    },
-    {
-        question:
-            "What is the purpose of the CSS flexbox layout in responsive design?",
-        options: [
-            "To create flexible layouts that adapt to different screen sizes",
-            "To position elements side by side",
-            "To set a maximum width for an element",
-            "To change the font size of an element",
-        ],
-        answer: "To create flexible layouts that adapt to different screen sizes",
-    },
-    {
-        question:
-            "What is the purpose of the CSS grid layout in responsive design?",
-        options: [
-            "To create complex, multi-column layouts",
-            "To hide elements on smaller screens",
-            "To change the font size of an element",
-            "To set a maximum width for an element",
-        ],
-        answer: "To create complex, multi-column layouts",
-    },
-    {
-        question:
-            "What is the purpose of the CSS position property in responsive design?",
-        options: [
-            "To control the position of an element on the webpage",
-            "To set a maximum width for an element",
-            "To hide elements on smaller screens",
-            "To change the font size of an element",
-        ],
-        answer: "To control the position of an element on the webpage",
-    },
-    {
-        question:
-            "What is the purpose of the CSS z-index property in responsive design?",
-        options: [
-            "To control the stacking order of elements",
-            "To set a maximum width for an element",
-            "To hide elements on smaller screens",
-            "To change the font size of an element",
-        ],
-        answer: "To control the stacking order of elements",
-    },
-    {
-        question:
-            "What is the purpose of the CSS transform property in responsive design?",
-        options: [
-            "To apply visual effects to elements",
-            "To set a maximum width for an element",
-            "To hide elements on smaller screens",
-            "To change the font size of an element",
-        ],
-        answer: "To apply visual effects to elements",
-    },
-    {
-        question:
-            "What is the purpose of the CSS transition property in responsive design?",
-        options: [
-            "To create smooth transitions between element states",
-            "To set a maximum width for an element",
-            "To hide elements on smaller screens",
-            "To change the font size of an element",
-        ],
-        answer: "To create smooth transitions between element states",
-    },
-    {
-        question:
-            "What is the purpose of the CSS animation property in responsive design?",
-        options: [
-            "To create animated effects on elements",
-            "To set a maximum width for an element",
-            "To hide elements on smaller screens",
-            "To change the font size of an element",
-        ],
-        answer: "To create animated effects on elements",
-    },
+  {
+    question: "What is Responsive Web Design?",
+    options: [
+      "A web design technique that allows websites to adapt to different screen sizes",
+      "A web design technique that makes websites look good on desktop computers",
+      "A web design technique that only works on mobile devices",
+      "A web design technique that allows websites to be downloaded faster",
+    ],
+    answer:
+      "A web design technique that allows websites to adapt to different screen sizes",
+  },
+  {
+    question:
+      "What is the difference between a responsive website and a mobile app?",
+    options: [
+      "A responsive website can be accessed through a mobile browser while a mobile app needs to be downloaded and installed",
+      "A mobile app is cheaper to develop than a responsive website",
+      "A mobile app is faster than a responsive website",
+      "A responsive website has more features than a mobile app",
+    ],
+    answer:
+      "A responsive website can be accessed through a mobile browser while a mobile app needs to be downloaded and installed",
+  },
+  {
+    question: "What is a viewport?",
+    options: [
+      "The visible area of a webpage",
+      "The code that makes a webpage responsive",
+      "The area where the logo is displayed on a webpage",
+      "The area where the navigation menu is displayed on a webpage",
+    ],
+    answer: "The visible area of a webpage",
+  },
+  {
+    question: "What is the purpose of media queries in responsive design?",
+    options: [
+      "To apply specific styles to different screen sizes",
+      "To make the website faster",
+      "To hide elements on smaller screens",
+      "To make the website more interactive",
+    ],
+    answer: "To apply specific styles to different screen sizes",
+  },
+  {
+    question: "What is a CSS breakpoint?",
+    options: [
+      "The point where a website breaks due to a coding error",
+      "The point where a website changes its layout based on screen size",
+      "The point where a website stops working on mobile devices",
+      "The point where a website changes its font size",
+    ],
+    answer: "The point where a website changes its layout based on screen size",
+  },
+  {
+    question: "What is the best way to test if a website is responsive?",
+    options: [
+      "Resize the browser window and see if the website adapts",
+      "Use a mobile device and see if the website looks good",
+      "Use a desktop computer and see if the website looks good",
+      "Ask other people if the website looks good",
+    ],
+    answer: "Resize the browser window and see if the website adapts",
+  },
+  {
+    question: "What is the role of the meta viewport tag in responsive design?",
+    options: [
+      "To set the width and initial scale of the viewport",
+      "To hide elements on smaller screens",
+      "To set the font size of the website",
+      "To apply specific styles to different screen sizes",
+    ],
+    answer: "To set the width and initial scale of the viewport",
+  },
+  {
+    question: "What is the purpose of the CSS max-width property?",
+    options: [
+      "To set a maximum width for an element",
+      "To set a minimum width for an element",
+      "To set the font size of an element",
+      "To hide an element on smaller screens",
+    ],
+    answer: "To set a maximum width for an element",
+  },
+  {
+    question: "What is the purpose of the CSS min-width property?",
+    options: [
+      "To set a minimum width for an element",
+      "To set a maximum width for an element",
+      "To set the font size of an element",
+      "To hide an element on smaller screens",
+    ],
+    answer: "To set a minimum width for an element",
+  },
+  {
+    question:
+      "What is the purpose of the CSS float property in responsive design?",
+    options: [
+      "To position elements side by side",
+      "To hide elements on smaller screens",
+      "To change the font size of an element",
+      "To set a maximum width for an element",
+    ],
+    answer: "To position elements side by side",
+  },
+  {
+    question:
+      "What is the purpose of the CSS clear property in responsive design?",
+    options: [
+      "To prevent elements from being positioned next to a floated element",
+      "To set a maximum width for an element",
+      "To hide elements on smaller screens",
+      "To change the font size of an element",
+    ],
+    answer:
+      "To prevent elements from being positioned next to a floated element",
+  },
+  {
+    question:
+      "What is the purpose of the CSS display property in responsive design?",
+    options: [
+      "To control the visibility of an element",
+      "To set a maximum width for an element",
+      "To hide elements on smaller screens",
+      "To change the font size of an element",
+    ],
+    answer: "To control the visibility of an element",
+  },
+  {
+    question:
+      "What is the purpose of the CSS flexbox layout in responsive design?",
+    options: [
+      "To create flexible layouts that adapt to different screen sizes",
+      "To position elements side by side",
+      "To set a maximum width for an element",
+      "To change the font size of an element",
+    ],
+    answer: "To create flexible layouts that adapt to different screen sizes",
+  },
+  {
+    question:
+      "What is the purpose of the CSS grid layout in responsive design?",
+    options: [
+      "To create complex, multi-column layouts",
+      "To hide elements on smaller screens",
+      "To change the font size of an element",
+      "To set a maximum width for an element",
+    ],
+    answer: "To create complex, multi-column layouts",
+  },
+  {
+    question:
+      "What is the purpose of the CSS position property in responsive design?",
+    options: [
+      "To control the position of an element on the webpage",
+      "To set a maximum width for an element",
+      "To hide elements on smaller screens",
+      "To change the font size of an element",
+    ],
+    answer: "To control the position of an element on the webpage",
+  },
+  {
+    question:
+      "What is the purpose of the CSS z-index property in responsive design?",
+    options: [
+      "To control the stacking order of elements",
+      "To set a maximum width for an element",
+      "To hide elements on smaller screens",
+      "To change the font size of an element",
+    ],
+    answer: "To control the stacking order of elements",
+  },
+  {
+    question:
+      "What is the purpose of the CSS transform property in responsive design?",
+    options: [
+      "To apply visual effects to elements",
+      "To set a maximum width for an element",
+      "To hide elements on smaller screens",
+      "To change the font size of an element",
+    ],
+    answer: "To apply visual effects to elements",
+  },
+  {
+    question:
+      "What is the purpose of the CSS transition property in responsive design?",
+    options: [
+      "To create smooth transitions between element states",
+      "To set a maximum width for an element",
+      "To hide elements on smaller screens",
+      "To change the font size of an element",
+    ],
+    answer: "To create smooth transitions between element states",
+  },
+  {
+    question:
+      "What is the purpose of the CSS animation property in responsive design?",
+    options: [
+      "To create animated effects on elements",
+      "To set a maximum width for an element",
+      "To hide elements on smaller screens",
+      "To change the font size of an element",
+    ],
+    answer: "To create animated effects on elements",
+  },
 ];
 
 // const htmlDescription =
@@ -232,99 +234,102 @@ const questions = [
 // console.log(htmlDescription);
 
 const ResponsiveWebDesign = () => {
-    const [currentQuestion, setCurrentQuestion] = useState(0);
-    const [score, setScore] = useState(0);
-    const [showCertificate, setShowCertificate] = useState(false);
-    const [showDocument, setShowDocument] = useState(true);
-    const [showExam, setShowExam] = useState(false);
-    const [showFailed, setExamStatus] = useState("");
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
+  const [showCertificate, setShowCertificate] = useState(false);
+  const [showDocument, setShowDocument] = useState(true);
+  const [showExam, setShowExam] = useState(false);
+  const [showFailed, setExamStatus] = useState("");
 
-    const handleStartExam = () => {
-        setShowDocument(false);
-        setShowExam(true);
-    };
+  const handleStartExam = () => {
+    setShowDocument(false);
+    setShowExam(true);
+  };
 
-    const handleAnswer = (answer) => {
-        const isCorrect = answer === questions[currentQuestion].answer;
-        if (isCorrect) {
-            setScore(score + 5);
-        }
-        const nextQuestion = currentQuestion + 1;
-        if (nextQuestion < questions.length) {
-            setCurrentQuestion(nextQuestion);
-        } else {
-            if (score >= 80) {
-                setShowCertificate(true);
-            } else {
-                setExamStatus("You have failed the Exam! Try again after some time");
-            }
-        }
-    };
+  const handleAnswer = (answer) => {
+    const isCorrect = answer === questions[currentQuestion].answer;
+    if (isCorrect) {
+      setScore(score + 5);
+    }
+    const nextQuestion = currentQuestion + 1;
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
+    } else {
+      if (score >= 80) {
+        setShowCertificate(true);
+      } else {
+        setExamStatus("You have failed the Exam! Try again after some time");
+      }
+    }
+  };
 
-    return (
-        <React.Fragment>
-            <CourseContentContainer>
-                {showDocument && (
-                    <>
-                        <CourseImage
-                            src="https://www.pngall.com/wp-content/uploads/2016/07/Responsive-Web-Design.png"
-                            alt="RWD"
-                        />
+  return (
+    <React.Fragment>
+      <Header />
+      <CourseContentContainer>
+        {showDocument && (
+          <>
+            <CourseImage
+              src="https://www.pngall.com/wp-content/uploads/2016/07/Responsive-Web-Design.png"
+              alt="RWD"
+            />
 
-                        <ConceptTitle>Responsive Web Design</ConceptTitle>
-                        <ConceptDescription>
-                            <embed
-                                src="https://facultyweb.kennesaw.edu/zli8/it4403/rwd.pdf"
-                                type="application/pdf"
-                                width="100%"
-                                height="600px"
-                            />
-                        </ConceptDescription>
-                        <BtnContainer>
-                            <StartExam onClick={handleStartExam}>Start Exam</StartExam>
-                        </BtnContainer>
-                    </>
-                )}
-                {showExam && (
-                    <ExamContainer>
-                        <ExamTitle>Welcome to the Exam!</ExamTitle>
-                        <CountContainer>
-                            <Score> Score : {score}</Score>
-                            <QNSCount>Question: {currentQuestion + 1}/20</QNSCount>
-                        </CountContainer>
+            <ConceptTitle>Responsive Web Design</ConceptTitle>
+            <ConceptDescription>
+              <embed
+                src="https://facultyweb.kennesaw.edu/zli8/it4403/rwd.pdf"
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </ConceptDescription>
+            <BtnContainer>
+              <StartExam onClick={handleStartExam}>Start Exam</StartExam>
+            </BtnContainer>
+          </>
+        )}
+        {showExam && (
+          <ExamContainer>
+            <ExamTitle>Welcome to the Exam!</ExamTitle>
+            <CountContainer>
+              <Score> Score : {score}</Score>
+              <QNSCount>Question: {currentQuestion + 1}/20</QNSCount>
+            </CountContainer>
 
-                        <Question>
-                            {currentQuestion + 1}. {questions[currentQuestion].question}
-                        </Question>
-                        {questions[currentQuestion].options.map((option) => (
-                            <Option key={option} onClick={() => handleAnswer(option)}>
-                                {option}
-                            </Option>
-                        ))}
-                        {showCertificate && (
-                            <div>
-                                <ExamPassed>Congratulations, you passed the exam!</ExamPassed>
-                                <DownloadCertificate>
-                                    Download your certificate:
+            <Question>
+              {currentQuestion + 1}. {questions[currentQuestion].question}
+            </Question>
+            {questions[currentQuestion].options.map((option) => (
+              <Option key={option} onClick={() => handleAnswer(option)}>
+                {option}
+              </Option>
+            ))}
+            {showCertificate && (
+              <div>
+                <ExamPassed>Congratulations, you passed the exam!</ExamPassed>
+                <DownloadCertificate>
+                  Download your certificate:
                 </DownloadCertificate>
-                                <a
-                                    href="https://allinwebpro.com/dev2/wp-content/uploads/2016/03/Responsive-Web-Design-Illustration.png"
-                                    download
-                                >
-                                    <Certificate
-                                        src="https://allinwebpro.com/dev2/wp-content/uploads/2016/03/Responsive-Web-Design-Illustration.png"
-                                        alt="Certificate"
-                                    />
-                                </a>
-                            </div>
-                        )}
-                        <FailedMessage>{showFailed}</FailedMessage>
-                        <StartExam>Back</StartExam>
-                    </ExamContainer>
-                )}
-            </CourseContentContainer>
-        </React.Fragment>
-    );
+                <a
+                  href="https://allinwebpro.com/dev2/wp-content/uploads/2016/03/Responsive-Web-Design-Illustration.png"
+                  download
+                >
+                  <Certificate
+                    src="https://allinwebpro.com/dev2/wp-content/uploads/2016/03/Responsive-Web-Design-Illustration.png"
+                    alt="Certificate"
+                  />
+                </a>
+              </div>
+            )}
+            <FailedMessage>{showFailed}</FailedMessage>
+            <StartExam>
+              <LinkItem to="/lms-available">Back</LinkItem>
+            </StartExam>
+          </ExamContainer>
+        )}
+      </CourseContentContainer>
+    </React.Fragment>
+  );
 };
 
 export default ResponsiveWebDesign;

@@ -13,7 +13,7 @@ import Nodejs from "./Courses/Nodejs";
 import ReactCourse from "./Courses/ReactCourse";
 import ResponsiveWebDesign from "./Courses/ResponsiveWebDesign";
 import RestfulAPI from "./Courses/RestfulAPI";
-
+import ColorTheory from "./Courses/ColorTheory";
 import PremiumCourses from "./PremiumCourses";
 const LMS = () => (
   <>
@@ -37,6 +37,7 @@ const LMS = () => (
         path="/learn-Responsive-Web-Design"
         Component={ResponsiveWebDesign}
       />
+      <Route path="/learn-Color-Theory" Component={ColorTheory} />
     </Routes>
   </>
 );
