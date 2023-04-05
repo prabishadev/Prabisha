@@ -29,7 +29,7 @@ const TopSection = () => {
       <Section2>
         <TextSection>
           <Text1>
-            We help you <SpanText>SCALE UP </SpanText>your{" "}
+            We help you 1 <SpanText>SCALE UP </SpanText>your{" "}
             <SpanText>
               BUSINESS <br />
             </SpanText>
