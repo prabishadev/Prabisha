@@ -101,7 +101,7 @@ const MainHeader = () => {
       <Section21>
         <Section2logo>
           <a href="/">
-            <Imagelogo
+            <Imagelogo  
               className="logo"
               src="https://www.prabisha.co.uk/wp-content/uploads/2022/09/PC-Logo-NEW-for-Website-Page-PNG-1-300x140.png"
               alt="logo"

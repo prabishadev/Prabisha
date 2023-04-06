@@ -9,9 +9,9 @@ export const HeaderContainer = styled.div`
   position: fixed;
   z-index: 9;
   align-items: center;
-  height: 64px;
+  height:100px;
   justify-content: space-evenly;
-  background: #fdf7c3;
+  background: #ffffff;
   box-shadow: 0 2px 4px #00000012;
   @media screen and (max-width: 675px) {
     display: flex;
@@ -24,7 +24,8 @@ export const HeaderContainer = styled.div`
     height: 100vh;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 40px 0 0 10px;
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
+    background: #c99b3b;
   }
 `;
 
@@ -98,21 +99,24 @@ export const NavContainer = styled.ul`
 `;
 
 export const NavItem = styled.li`
+  color:#000;
   font-family: "Muli", sans-serif;
   height: 50px;
   font-style: normal;
-  font-size: 16px;
-  line-height: 22px;
   padding: 0 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 1rem;
+  font-weight: 500;
   letter-spacing: 0.18px;
   position: relative;
   white-space: nowrap;
   border-bottom: 3px solid #ffffff;
   cursor: pointer;
+  @media screen and (max-width: 768px) {
+    color:#fff;
+  }
 `;
 
 export const ProfileIconContainer = styled.div`
@@ -164,34 +168,30 @@ export const LinkItem = styled(Link)`
 `;
 
 export const LogoutBtn = styled.button`
-  border: 1px solid #8a8136;
-  background-color: #fff;
-  color: #000;
+  background-color:  #c99b3b;
+  color: #fff;
   border-radius: 5px;
   padding: 10px;
   margin-left: 20px;
   cursor: pointer;
+  border:none;
+  width:120px;
+  height:42px;
+  @media screen and (max-width:768px){
+    display:none;
+  }
 `;
 
 export const LogoutBtnMobile = styled.button`
-  border: none;
-  background: none;
-  font-family: "Muli", sans-serif;
-  height: 50px;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 22px;
-  padding: 0 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  letter-spacing: 0.18px;
-  position: relative;
-  white-space: nowrap;
-  border-bottom: 3px solid #ffffff;
-  cursor: pointer;
-  text-decoration: none;
+border:none;
+  width:120px;
+  height:42px;
+  color: #000;
+  background-color: #fff;
+  margin-top: 20px;
+  font-size:20px;
+
+ 
   @media (min-width: 768px) {
     display: none;
   }
