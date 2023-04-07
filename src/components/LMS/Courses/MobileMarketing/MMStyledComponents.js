@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import "typeface-raleway";
 import "typeface-roboto";
 import { MdDownload } from "react-icons/md";
@@ -13,7 +12,6 @@ export const CourseContentContainer = styled.div`
   padding-top: 20px;
   padding-bottom: 50px;
 `;
-
 export const LinkItem = styled(Link)`
   text-decoration: none;
   color: white;
@@ -90,11 +88,10 @@ export const ExamContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   margin-top: 30px;
-  
 `;
 
 export const ExamTitle = styled.h1`
-  color: #0B034F;
+  color: #15202b;
   font-family: "Raleway";
   font-size: 35px;
   font-weight: 600;

@@ -1,5 +1,10 @@
 import styled from "styled-components";
+
 import "typeface-raleway";
+
+import "typeface-open-sans";
+import { FaSearch } from 'react-icons/fa';
+
 
 export const ACContainer = styled.div`
   min-height: 700px;
@@ -49,4 +54,31 @@ export const TabContent = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+`;
+
+
+export const SearchContainer = styled.div`
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  height:50px;
+  justify-content:space-between;
+  margin:30px;
+  border-radius:15px;
+`;
+
+export const SearchInput = styled.input`
+  border: none;
+  outline: none;
+  font-size: 18px;
+  margin-left:5px;
+`;
+
+export const SearchIcon = styled(FaSearch)`
+  color: #666;
+  font-size: 30px;
+  align-self:right;
+  margin-right:15px;
 `;
