@@ -14,6 +14,7 @@ import {
   MobileProfileIconContainer,
   LogoutBtn,
   LogoutBtnMobile,
+  TabIcons
 } from "./HeaderStyledComponents";
 
 import React, { useState } from "react";
@@ -22,6 +23,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [selectedNav, setSelectedNav] = useState("available");
   const [clicked, setClicked] = useState(false);
+  const [score, setScore] = useState(0);
   const handleNavClick = (nav) => {
     setSelectedNav(nav);
   };
@@ -46,7 +48,7 @@ const Header = () => {
       </MobileHeader>
       <HeaderContainer isClicked={clicked}>
         <Logo
-          src="https://res.cloudinary.com/dg0telgxq/image/upload/v1680240144/Screenshot_2023-03-31_105047_ztn5q2.png"
+          src="https://www.prabisha.co.uk/wp-content/uploads/2022/09/PC-Logo-NEW-for-Website-Page-PNG-1-300x140.png"
           alt="logo"
         />
         <NavContainer>
@@ -55,7 +57,8 @@ const Header = () => {
               active={selectedNav === "available"}
               onClick={() => handleNavClick("available")}
             >
-              Available Courses
+            <TabIcons src="https://cdn.iconscout.com/icon/premium/png-256-thumb/online-course-2184643-1830185.png?f=webp&w=256"  alt="avail"/>
+             Available Courses  {score}
             </NavItem>
           </LinkItem>
           <LinkItem to="/lms-premium">
@@ -63,7 +66,8 @@ const Header = () => {
               active={selectedNav === "premium"}
               onClick={() => handleNavClick("premium")}
             >
-              Premium Courses
+             <TabIcons src="https://thumbs.dreamstime.com/b/finished-course-line-icon-concept-sign-outline-vector-illustration-linear-symbol-173785697.jpg" alt="completed"/>
+              Courses Completed  {score}
             </NavItem>
           </LinkItem>
           <LinkItem to="/lms-certificates">
@@ -71,7 +75,7 @@ const Header = () => {
               active={selectedNav === "certificates"}
               onClick={() => handleNavClick("certificates")}
             >
-              Achieved Certificates
+              <TabIcons  src="https://cdn-icons-png.flaticon.com/512/7238/7238706.png" alt="cert"/>Certificates {score}
             </NavItem>
           </LinkItem>
           <LinkItem to="/lms-score">
@@ -79,7 +83,8 @@ const Header = () => {
               active={selectedNav === "score"}
               onClick={() => handleNavClick("score")}
             >
-              Learning Score
+             <TabIcons src="https://e7.pngegg.com/pngimages/866/555/png-clipart-switzerland-dacadoo-health-score-business-innovation-icons-company-text.png"
+              alt="score"/> Score  {score}
             </NavItem>
           </LinkItem>
           <Link to="/">

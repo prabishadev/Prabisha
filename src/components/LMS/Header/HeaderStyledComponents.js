@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
+
 import "typeface-muli";
 export const HeaderContainer = styled.div`
   display: flex;
@@ -9,7 +10,7 @@ export const HeaderContainer = styled.div`
   position: fixed;
   z-index: 9;
   align-items: center;
-  height:100px;
+  height:64px;
   justify-content: space-evenly;
   background: #ffffff;
   box-shadow: 0 2px 4px #00000012;
@@ -28,6 +29,12 @@ export const HeaderContainer = styled.div`
     background: #c99b3b;
   }
 `;
+
+export const TabIcons = styled.img`
+width:45px;
+height:45px;
+margin-right:10px;
+`
 
 export const MobileHeader = styled.div`
   display: flex;
