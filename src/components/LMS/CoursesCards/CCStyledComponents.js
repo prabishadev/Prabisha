@@ -26,7 +26,7 @@ margin:10px;
 
 
 export const CourseImage = styled.img`
-  height: 100px;
+  height:100px;
   width: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;

@@ -89,10 +89,11 @@ export const ExamContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   margin-top: 30px;
+  
 `;
 
 export const ExamTitle = styled.h1`
-  color: #15202b;
+  color: #0B034F;
   font-family: "Raleway";
   font-size: 35px;
   font-weight: 600;

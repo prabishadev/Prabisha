@@ -22,8 +22,8 @@ export const TabContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   border-bottom-style: solid;
-  border-bottom-width: 4px;
-  border-color: #f12711;
+  border-bottom-width: 3px;
+  border-color: #C99B3B;
 `;
 
 export const TabItem = styled.div`
@@ -34,7 +34,7 @@ export const TabItem = styled.div`
   background-color: ${(props) => (props.active ? "#11c7f5" : "#ffffff")};
   color: ${(props) => (props.active ? "#fff" : "#333")};
   border-top-left-radius: 10px;
-  border-color: #b6b8b7;
+  border-color: #C99B3B;
   border-style: solid;
   border-top-right-radius: 10px;
   border-bottom-width: 0px;

@@ -20,6 +20,7 @@ import {
   ExamContainer,
   Question,
   ExamTitle,
+  Arrow,HrLine
 } from "./BStyledComponents";
 
 const questions = [
@@ -200,6 +201,9 @@ const Bootstrap = () => {
         )}
         {showExam && (
           <ExamContainer>
+            <>
+              <LinkItem to="/lms-available"><Arrow/></LinkItem>
+            </>
             <ExamTitle>Welcome to the Exam!</ExamTitle>
             <CountContainer>
               <Score> Score : {score}</Score>
@@ -209,6 +213,7 @@ const Bootstrap = () => {
             <Question>
               {currentQuestion + 1}. {questions[currentQuestion].question}
             </Question>
+            <HrLine/>
             {questions[currentQuestion].options.map((option) => (
               <Option key={option} onClick={() => handleAnswer(option)}>
                 {option}
