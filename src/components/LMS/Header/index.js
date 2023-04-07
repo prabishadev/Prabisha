@@ -14,7 +14,7 @@ import {
   MobileProfileIconContainer,
   LogoutBtn,
   LogoutBtnMobile,
-  TabIcons
+  TabIcons,LMS
 } from "./HeaderStyledComponents";
 
 import React, { useState } from "react";
@@ -47,10 +47,13 @@ const Header = () => {
         </ButtonContainer>
       </MobileHeader>
       <HeaderContainer isClicked={clicked}>
+        <div style ={{display : 'flex', justifyContent:"center",alignItems:"center"}}>
         <Logo
           src="https://www.prabisha.co.uk/wp-content/uploads/2022/09/PC-Logo-NEW-for-Website-Page-PNG-1-300x140.png"
           alt="logo"
         />
+        <LMS>LMS</LMS>
+        </div>
         <NavContainer>
           <LinkItem to="/lms-available">
             <NavItem

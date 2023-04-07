@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import "typeface-open-sans";
+import "typeface-raleway";
 
 export const ACContainer = styled.div`
   min-height: 700px;
@@ -12,7 +12,8 @@ export const ACContainer = styled.div`
 `;
 
 export const ACTitle = styled.h1`
-  font-family: "Open Sans", sans-serif;
+font-family: "Raleway", sans-serif;
+color:#0B034F;
   text-align: center;
   margin:50px;
 `;

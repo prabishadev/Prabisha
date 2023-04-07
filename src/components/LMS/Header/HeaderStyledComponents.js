@@ -31,11 +31,21 @@ export const HeaderContainer = styled.div`
 `;
 
 export const TabIcons = styled.img`
-width:45px;
-height:45px;
+width:35px;
+height:35px;
 margin-right:10px;
 `
+export const LMS = styled.p`
+color:#000;
+font-size:22px;
+font-weight:bold;
+margin-left:10px;
+@media screen and (max-width:768px){
+  color:#fff;
+  margin-top:5px;
 
+}
+`
 export const MobileHeader = styled.div`
   display: flex;
   justify-content: space-between;
