@@ -23,7 +23,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [selectedNav, setSelectedNav] = useState("available");
   const [clicked, setClicked] = useState(false);
-  const [score, setScore] = useState(0);
+  const score = 0;
   const handleNavClick = (nav) => {
     setSelectedNav(nav);
   };
