@@ -179,7 +179,7 @@ const HTML = () => {
             <ConceptTitle>HTML Hyper Text MarkUp Language</ConceptTitle>
             <ConceptDescription>
               <embed
-                src="http://www.yorku.ca/pkashiya/HTML_Basics.pdf"
+                src="https://www.tutorialspoint.com/html/html_tutorial.pdf"
                 type="application/pdf"
                 width="100%"
                 height="600px"

@@ -9,7 +9,7 @@ export const HeaderContainer = styled.div`
   position: fixed;
   z-index: 9;
   align-items: center;
-  height:100px;
+  height:75px;
   justify-content: space-evenly;
   background: #ffffff;
   box-shadow: 0 2px 4px #00000012;

@@ -63,11 +63,14 @@ export const SearchContainer = styled.div`
   justify-content:space-between;
   margin:30px;
   border-radius:15px;
+  cursor:pointer;
 `;
+
 
 export const SearchInput = styled.input`
   border: none;
   outline: none;
+  width:85%;
   font-size: 18px;
   margin-left:5px;
 `;

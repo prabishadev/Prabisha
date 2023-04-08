@@ -17,6 +17,8 @@ import {
 
 const Login = () => {
   const navigate = useNavigate();
+  // const [user, setUser] = useState(null);
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setLoading] = useState(false);
@@ -28,6 +30,17 @@ const Login = () => {
       </Loader>
     );
   };
+
+  // const handleLogin = () => {
+  //   window.location.href = '/auth/google';
+  // };
+
+  // useEffect(() => {
+  //   axios.get('/api/user')
+  //     .then(res => setUser(res.data))
+  //     .catch(err => console.log(err));
+  // }, []);
+  // console.log(user);
 
   const handleSubmit = async (event) => {
     setLoading(true);
@@ -86,6 +99,9 @@ const Login = () => {
             <LinkItem to="/register">
               <LoginButton>Create an Account</LoginButton>
             </LinkItem>
+
+            {/* <button onClick={handleLogin}>Login with Google</button> */}
+
           </LoginForm>
         </LoginContainer>
       )}
