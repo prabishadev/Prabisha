@@ -201,10 +201,10 @@ const Bootstrap = () => {
         )}
         {showExam && (
           <ExamContainer>
+            <ExamTitle>Welcome to the Exam!</ExamTitle>
             <>
               <LinkItem to="/lms-available"><Arrow/></LinkItem>
             </>
-            <ExamTitle>Welcome to the Exam!</ExamTitle>
             <CountContainer>
               <Score> Score : {score}</Score>
               <QNSCount>Question: {currentQuestion + 1}/20</QNSCount>
@@ -237,9 +237,7 @@ const Bootstrap = () => {
               </div>
             )}
             <FailedMessage>{showFailed}</FailedMessage>
-            <StartExam>
-              <LinkItem to="/lms-available">Back</LinkItem>
-            </StartExam>
+            
           </ExamContainer>
         )}
       </CourseContentContainer>

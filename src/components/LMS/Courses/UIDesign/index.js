@@ -20,6 +20,8 @@ import {
   ExamContainer,
   Question,
   ExamTitle,
+  HrLine,
+  Arrow
 } from "./UIStyledComponents";
 
 const questions = [
@@ -296,6 +298,9 @@ const UIDesign = () => {
         {showExam && (
           <ExamContainer>
             <ExamTitle>Welcome to the Exam!</ExamTitle>
+            <>
+              <LinkItem to="/lms-available"><Arrow/></LinkItem>
+            </>
             <CountContainer>
               <Score> Score : {score}</Score>
               <QNSCount>Question: {currentQuestion + 1}/20</QNSCount>
@@ -304,6 +309,7 @@ const UIDesign = () => {
             <Question>
               {currentQuestion + 1}. {questions[currentQuestion].question}
             </Question>
+            <HrLine/>
             {questions[currentQuestion].choices.map((option) => (
               <Option key={option} onClick={() => handleAnswer(option)}>
                 {option}
@@ -327,9 +333,7 @@ const UIDesign = () => {
               </div>
             )}
             <FailedMessage>{showFailed}</FailedMessage>
-            <StartExam>
-              <LinkItem to="/lms-available">Back</LinkItem>
-            </StartExam>
+            
           </ExamContainer>
         )}
       </CourseContentContainer>

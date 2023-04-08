@@ -20,6 +20,8 @@ import {
   ExamContainer,
   Question,
   ExamTitle,
+  HrLine,
+  Arrow
 } from "./PPCStyledComponents";
 
 const questions = [  {    question: "What is Pay Per Click (PPC)?",    options: ["A type of online advertising where advertisers pay each time a user clicks on their ad", "A type of online advertising where advertisers pay a fixed monthly fee", "A type of online advertising where advertisers pay based on the number of impressions their ad receives", "A type of online advertising where advertisers pay based on the number of conversions their ad generates"],
@@ -181,6 +183,9 @@ const PayPerClick = () => {
         {showExam && (
           <ExamContainer>
             <ExamTitle>Welcome to the Exam!</ExamTitle>
+            <>
+              <LinkItem to="/lms-available"><Arrow/></LinkItem>
+            </>
             <CountContainer>
               <Score> Score : {score}</Score>
               <QNSCount>Question: {currentQuestion + 1}/20</QNSCount>
@@ -189,6 +194,7 @@ const PayPerClick = () => {
             <Question>
               {currentQuestion + 1}. {questions[currentQuestion].question}
             </Question>
+            <HrLine/>
             {questions[currentQuestion].choices.map((option) => (
               <Option key={option} onClick={() => handleAnswer(option)}>
                 {option}
@@ -212,9 +218,7 @@ const PayPerClick = () => {
               </div>
             )}
             <FailedMessage>{showFailed}</FailedMessage>
-            <StartExam>
-              <LinkItem to="/lms-available">Back</LinkItem>
-            </StartExam>
+            
           </ExamContainer>
         )}
       </CourseContentContainer>

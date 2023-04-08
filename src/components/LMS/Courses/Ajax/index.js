@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
 import Header from "../../Header";
 
 import {
@@ -21,6 +21,8 @@ import {
   ExamContainer,
   Question,
   ExamTitle,
+  HrLine,
+  Arrow
 } from "./AStyledComponents";
 const questions = [
   {
@@ -274,6 +276,9 @@ const Ajax = () => {
         {showExam && (
           <ExamContainer>
             <ExamTitle>Welcome to the Exam!</ExamTitle>
+            <>
+              <LinkItem to="/lms-available"><Arrow/></LinkItem>
+            </>
             <CountContainer>
               <Score> Score : {score}</Score>
               <QNSCount>Question: {currentQuestion + 1}/20</QNSCount>
@@ -282,6 +287,7 @@ const Ajax = () => {
             <Question>
               {currentQuestion + 1}. {questions[currentQuestion].question}
             </Question>
+            <HrLine/>
             {questions[currentQuestion].options.map((option) => (
               <Option key={option} onClick={() => handleAnswer(option)}>
                 {option}
@@ -305,11 +311,7 @@ const Ajax = () => {
               </div>
             )}
             <FailedMessage>{showFailed}</FailedMessage>
-            <Link to="/lms-available">
-              <StartExam>
-                <LinkItem to="/lms-available">Back</LinkItem>
-              </StartExam>
-            </Link>
+            
           </ExamContainer>
         )}
       </CourseContentContainer>
