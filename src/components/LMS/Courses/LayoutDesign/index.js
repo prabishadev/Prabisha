@@ -20,6 +20,8 @@ import {
   ExamContainer,
   Question,
   ExamTitle,
+  Arrow,
+  HrLine
 } from "./LDStyledComponents";
 
 const questions = [
@@ -295,6 +297,9 @@ const LayoutDesign = () => {
         {showExam && (
           <ExamContainer>
             <ExamTitle>Welcome to the Exam!</ExamTitle>
+            <>
+              <LinkItem to="/lms-available"><Arrow/></LinkItem>
+            </>
             <CountContainer>
               <Score> Score : {score}</Score>
               <QNSCount>Question: {currentQuestion + 1}/20</QNSCount>
@@ -303,6 +308,7 @@ const LayoutDesign = () => {
             <Question>
               {currentQuestion + 1}. {questions[currentQuestion].question}
             </Question>
+            <HrLine/>
             {questions[currentQuestion].choices.map((option) => (
               <Option key={option} onClick={() => handleAnswer(option)}>
                 {option}
@@ -326,9 +332,7 @@ const LayoutDesign = () => {
               </div>
             )}
             <FailedMessage>{showFailed}</FailedMessage>
-            <StartExam>
-              <LinkItem to="/lms-available">Back</LinkItem>
-            </StartExam>
+           
           </ExamContainer>
         )}
       </CourseContentContainer>

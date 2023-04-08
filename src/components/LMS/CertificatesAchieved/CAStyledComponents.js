@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import "typeface-pacifico";
+import "typeface-raleway";
 
 export const CardContainer = styled.div`
   border: 1px solid red;
@@ -13,7 +13,7 @@ export const CertificateTitle = styled.h2`
   font-size: 24px;
   margin: 0;
   display: flex;
-  font-family: "Roboto";
+  font-family: "Raleway", sans-serif;
   text-align: center;
   align-items: center;
 `;

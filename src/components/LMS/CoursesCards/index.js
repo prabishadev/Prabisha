@@ -1,5 +1,6 @@
 import {
     CourseCard,
+    CourseInfo,
     CourseImage,
     CourseTitle,
     CourseDescription,
@@ -16,11 +17,13 @@ const CoursesCards = (props) => {
     return (
         <CourseCard>
             <CourseImage src={image} alt={title} />
+            <CourseInfo>
             <CourseTitle>{title}</CourseTitle>
             <CourseDescription>{description}</CourseDescription>
             <LinkItem to={`/learn-${cid}`}>
                 <StartBtn>Start Learning</StartBtn>
             </LinkItem>
+            </CourseInfo>
         </CourseCard>
     );
 };

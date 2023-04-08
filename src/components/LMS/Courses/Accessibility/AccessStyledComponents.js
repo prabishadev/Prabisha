@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import "typeface-raleway";
 import "typeface-roboto";
+import {BsArrowLeftCircleFill} from 'react-icons/bs'
 import { MdDownload } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -12,7 +13,6 @@ export const CourseContentContainer = styled.div`
   padding-top: 20px;
   padding-bottom: 50px;
 `;
-
 export const LinkItem = styled(Link)`
   text-decoration: none;
   color: white;
@@ -84,15 +84,27 @@ export const StartExam = styled.button`
   align-self: center;
 `;
 
+export const Arrow = styled(BsArrowLeftCircleFill)`
+color: #282846;
+height: 34px;
+width: 34px;
+`
+
 export const ExamContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 30px;
+  padding:10px;
+  margin-top:30px;
+ 
+  min-width: 100% !important;
+  @media screen and (max-width: 768px) {
+    min-width: 130%;
+  }
 `;
 
 export const ExamTitle = styled.h1`
-  color: #15202b;
+  color: #0B034F;
   font-family: "Raleway";
   font-size: 35px;
   font-weight: 600;
@@ -100,17 +112,24 @@ export const ExamTitle = styled.h1`
 `;
 
 export const Question = styled.p`
-  color: #0927eb;
+  color: #000;
   font-family: "Roboto";
   font-size: 30px;
   font-weight: 500;
   text-align: left;
   margin-left: 40px;
   margin-right: 40px;
+  
 `;
 
+export const HrLine = styled.p`
+ border-bottom:2px solid #A2D2FF;
+ width:95%;
+ margin-top:-20px;
+`
+
 export const Score = styled.h4`
-  color: #0bdb4d;
+  color: #1A5F7A;
   font-family: "Roboto";
   font-size: 25px;
   font-weight: 600;
@@ -122,11 +141,12 @@ export const CountContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 20px;
-  width: 100%;
+  width: 95%;
+  border-bottom: 3px solid #2F86A6;
 `;
 
 export const QNSCount = styled.p`
-  color: #d10bdb;
+  color: #1A5F7A;
   font-family: "Roboto";
   font-size: 25px;
   font-weight: 400;

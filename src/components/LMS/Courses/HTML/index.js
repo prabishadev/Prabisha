@@ -19,6 +19,8 @@ import {
   ExamContainer,
   Question,
   ExamTitle,
+  HrLine,
+  Arrow
 } from "./HTMLStyledComponents";
 const questions = [
   {
@@ -193,6 +195,9 @@ const HTML = () => {
         {showExam && (
           <ExamContainer>
             <ExamTitle>Welcome to the Exam!</ExamTitle>
+            <>
+              <LinkItem to="/lms-available"><Arrow/></LinkItem>
+            </>
             <CountContainer>
               <Score> Score : {score}</Score>
               <QNSCount>Question: {currentQuestion + 1}/20</QNSCount>
@@ -201,6 +206,7 @@ const HTML = () => {
             <Question>
               {currentQuestion + 1}. {questions[currentQuestion].question}
             </Question>
+            <HrLine/>
             {questions[currentQuestion].options.map((option) => (
               <Option key={option} onClick={() => handleAnswer(option)}>
                 {option}
@@ -224,9 +230,7 @@ const HTML = () => {
               </div>
             )}
             <FailedMessage>{showFailed}</FailedMessage>
-            <StartExam>
-              <LinkItem to="/lms-available">Back</LinkItem>
-            </StartExam>
+            
           </ExamContainer>
         )}
       </CourseContentContainer>

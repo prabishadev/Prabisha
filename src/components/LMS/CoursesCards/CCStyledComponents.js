@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import "typeface-roboto";
 
 export const CourseCard = styled.div`
-  min-height: 400px;
-  width: 300px;
-  margin: 30px;
+  min-height: 250px;
+  width: 250px;
+  margin: 20px;
   border-radius: 10px;
  border: 1px solid #c4c2be;
   transition: all 0.5s;
@@ -20,19 +20,23 @@ export const CourseCard = styled.div`
   }
 `;
 
+export const CourseInfo = styled.div`
+margin:10px;
+`
+
+
 export const CourseImage = styled.img`
-  height: 200px;
+  height:100px;
   width: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 `;
 
 export const CourseTitle = styled.h2`
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 900;
+  font-size: 18px;
   line-height: 24px;
-  color: #424242;
-  margin-left: 10px;
+  color: #0B034F;
   font-family: "Muli";
 `;
 
@@ -41,15 +45,10 @@ export const CourseDescription = styled.p`
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    height: 90px;
-    width: 100%;
-    min-width: 230px;
     font-family:"Muli sans-serif"
     text-overflow: ellipsis;
     overflow: hidden;
-    flex: 1;
-    padding:10px;
-    padding-right:10px;
+    
 }
 `;
 
@@ -60,8 +59,8 @@ export const StartBtn = styled.div`
     #f09819 51%,
     #ff512f 100%
   );
-  margin: 10px;
-  padding: 15px 45px;
+
+  padding: 10px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -76,3 +75,6 @@ export const StartBtn = styled.div`
 export const LinkItem = styled(Link)`
   text-decoration: none;
 `;
+
+
+

@@ -20,6 +20,8 @@ import {
   ExamContainer,
   Question,
   ExamTitle,
+  HrLine,
+  Arrow
 } from "./SMMStyledComponents";
 
 const questions = [  {    question: "What is the main goal of social media marketing?",    options: [      "To generate leads",      "To increase website traffic",      "To promote brand awareness",      "To sell products directly to customers"    ],
@@ -285,6 +287,9 @@ const SocialMediaMarketing = () => {
         {showExam && (
           <ExamContainer>
             <ExamTitle>Welcome to the Exam!</ExamTitle>
+            <>
+              <LinkItem to="/lms-available"><Arrow/></LinkItem>
+            </>
             <CountContainer>
               <Score> Score : {score}</Score>
               <QNSCount>Question: {currentQuestion + 1}/20</QNSCount>
@@ -293,6 +298,7 @@ const SocialMediaMarketing = () => {
             <Question>
               {currentQuestion + 1}. {questions[currentQuestion].question}
             </Question>
+            <HrLine/>
             {questions[currentQuestion].choices.map((option) => (
               <Option key={option} onClick={() => handleAnswer(option)}>
                 {option}
@@ -316,9 +322,7 @@ const SocialMediaMarketing = () => {
               </div>
             )}
             <FailedMessage>{showFailed}</FailedMessage>
-            <StartExam>
-              <LinkItem to="/lms-available">Back</LinkItem>
-            </StartExam>
+            
           </ExamContainer>
         )}
       </CourseContentContainer>

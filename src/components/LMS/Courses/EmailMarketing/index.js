@@ -20,6 +20,8 @@ import {
   ExamContainer,
   Question,
   ExamTitle,
+  HrLine,
+  Arrow
 } from "./EMMStyledComponents";
 
 const questions = [  {    question: "What is the purpose of an email opt-in?",    options: [      "To verify a user's email address",      "To send promotional emails without consent",      "To give users the option to receive emails from a company",      "To ensure that email recipients are over 18 years old"    ],
@@ -276,6 +278,9 @@ const EmailMarketing = () => {
         {showExam && (
           <ExamContainer>
             <ExamTitle>Welcome to the Exam!</ExamTitle>
+            <>
+              <LinkItem to="/lms-available"><Arrow/></LinkItem>
+            </>
             <CountContainer>
               <Score> Score : {score}</Score>
               <QNSCount>Question: {currentQuestion + 1}/20</QNSCount>
@@ -284,6 +289,7 @@ const EmailMarketing = () => {
             <Question>
               {currentQuestion + 1}. {questions[currentQuestion].question}
             </Question>
+            <HrLine/>
             {questions[currentQuestion].options.map((option) => (
               <Option key={option} onClick={() => handleAnswer(option)}>
                 {option}
@@ -307,9 +313,7 @@ const EmailMarketing = () => {
               </div>
             )}
             <FailedMessage>{showFailed}</FailedMessage>
-            <StartExam>
-              <LinkItem to="/lms-available">Back</LinkItem>
-            </StartExam>
+           
           </ExamContainer>
         )}
       </CourseContentContainer>

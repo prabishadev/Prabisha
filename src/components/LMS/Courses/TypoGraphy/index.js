@@ -20,6 +20,8 @@ import {
   Question,
   LinkItem,
   ExamTitle,
+  HrLine,
+  Arrow
 } from "./TGStyledComponents";
 
 const questions = [
@@ -283,6 +285,9 @@ const TypoGraphy = () => {
         {showExam && (
           <ExamContainer>
             <ExamTitle>Welcome to the Exam!</ExamTitle>
+            <>
+              <LinkItem to="/lms-available"><Arrow/></LinkItem>
+            </>
             <CountContainer>
               <Score> Score : {score}</Score>
               <QNSCount>Question: {currentQuestion + 1}/20</QNSCount>
@@ -291,6 +296,7 @@ const TypoGraphy = () => {
             <Question>
               {currentQuestion + 1}. {questions[currentQuestion].question}
             </Question>
+            <HrLine/>
             {questions[currentQuestion].choices.map((option) => (
               <Option key={option} onClick={() => handleAnswer(option)}>
                 {option}
@@ -314,9 +320,7 @@ const TypoGraphy = () => {
               </div>
             )}
             <FailedMessage>{showFailed}</FailedMessage>
-            <StartExam>
-              <LinkItem to="/lms-available">Back</LinkItem>
-            </StartExam>
+            
           </ExamContainer>
         )}
       </CourseContentContainer>

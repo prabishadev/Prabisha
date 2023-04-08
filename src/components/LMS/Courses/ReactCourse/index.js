@@ -20,6 +20,8 @@ import {
   ExamContainer,
   Question,
   ExamTitle,
+  HrLine,
+  Arrow
 } from "./RStyledComponents";
 
 const questions = [
@@ -298,6 +300,9 @@ const ReactCourse = () => {
         {showExam && (
           <ExamContainer>
             <ExamTitle>Welcome to the Exam!</ExamTitle>
+            <>
+              <LinkItem to="/lms-available"><Arrow/></LinkItem>
+            </>
             <CountContainer>
               <Score> Score : {score}</Score>
               <QNSCount>Question: {currentQuestion + 1}/20</QNSCount>
@@ -306,6 +311,7 @@ const ReactCourse = () => {
             <Question>
               {currentQuestion + 1}. {questions[currentQuestion].question}
             </Question>
+            <HrLine/>
             {questions[currentQuestion].options.map((option) => (
               <Option key={option} onClick={() => handleAnswer(option)}>
                 {option}
@@ -329,9 +335,7 @@ const ReactCourse = () => {
               </div>
             )}
             <FailedMessage>{showFailed}</FailedMessage>
-            <StartExam>
-              <LinkItem to="/lms-available">Back</LinkItem>
-            </StartExam>
+           
           </ExamContainer>
         )}
       </CourseContentContainer>
