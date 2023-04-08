@@ -36,8 +36,8 @@ export const TabItem = styled.div`
   padding-left: 30px;
   padding-right: 30px;
   cursor: pointer;
-  background-color: ${(props) => (props.active ? "#11c7f5" : "#ffffff")};
-  color: ${(props) => (props.active ? "#fff" : "#333")};
+  background-color: ${(props) => (props.active ? "#0b034f" : "#ffffff")};
+  color: ${(props) => (props.active ? "#c99b3b" : "#333")};
   border-top-left-radius: 10px;
   border-color: #C99B3B;
   border-style: solid;
