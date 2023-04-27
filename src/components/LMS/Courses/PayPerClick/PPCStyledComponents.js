@@ -27,9 +27,17 @@ export const Download = styled(MdDownload)`
 `;
 
 export const CourseImage = styled.img`
-  height: 450px;
-  width: 100%;
+  height: 50px;
+  width: 50px;
   margin-top: 50px;
+`;
+
+export const TitleImage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align:center;
+  align-items: center;
 `;
 
 export const ConceptTitle = styled.h1`
@@ -95,6 +103,8 @@ export const ExamContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   padding:10px;
+  padding-left: 125px;
+  padding-right: 0px;
   margin-top:30px;
  
   min-width: 100% !important;
@@ -192,8 +202,10 @@ export const ExamPassed = styled.h4`
 `;
 
 export const Certificate = styled.img`
-  height: 600px;
-  width: 100%;
+  height:500px;
+  width: 80%;
+  align-self: center;
+
 `;
 
 export const DownloadCertificate = styled.h3`
@@ -203,3 +215,29 @@ export const DownloadCertificate = styled.h3`
   font-weight: 400;
   text-align: center;
 `;
+
+export const SubmitBtn = styled.div`
+ background-color: #0b034f;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: white;
+  width:150px;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-left:50%;
+  margin-top:10px;
+  cursor:pointer;
+`;
+
+export const ScoreText = styled.h2`
+margin-left:70%;`
+
+export const LogoTitle = styled.div`
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-self:center;
+align-items:center;`

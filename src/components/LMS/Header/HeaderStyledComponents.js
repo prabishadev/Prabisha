@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
+import {MdLogout } from "react-icons/md";
+
 import { Link } from "react-router-dom";
+
 
 import "typeface-muli";
 export const HeaderContainer = styled.div`
@@ -10,11 +13,7 @@ export const HeaderContainer = styled.div`
   position: fixed;
   z-index: 9;
   align-items: center;
-<<<<<<< HEAD
-  height:75px;
-=======
   height:64px;
->>>>>>> 32ee42d89b335444b7847503b25eba305c4ff3c2
   justify-content: space-evenly;
   background: #ffffff;
   box-shadow: 0 2px 4px #00000012;
@@ -93,6 +92,11 @@ export const Close = styled(AiOutlineClose)`
   font-size: 30px;
   font-weight: bold;
   align-items: center;
+`;
+
+export const Logout = styled(MdLogout)`
+  font-size: 15px;
+  font-weight: bold;
 `;
 
 export const Logo = styled.img`
@@ -194,8 +198,13 @@ export const LogoutBtn = styled.button`
   border-radius: 5px;
   padding: 10px;
   margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration:None;
   cursor: pointer;
   border:none;
+  font-size: 20px;
   width:120px;
   height:42px;
   @media screen and (max-width:768px){

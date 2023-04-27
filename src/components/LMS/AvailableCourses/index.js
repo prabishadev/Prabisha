@@ -25,7 +25,7 @@ const Courses = [
     title: "HTML",
     image: "https://wallpapercave.com/wp/wp7421222.jpg",
     description:
-      "Hypertext Markup Language is the standard markup language for creating web pages and web applications.",
+      "Hypertext Markup Language is the standard markup language for creating web pages...",
       category:'WebDevelopment',
   },
   {
@@ -34,7 +34,7 @@ const Courses = [
     image: "https://mona.media/wp-content/uploads/2021/07/css.png",
 
     description:
-      "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in HTML or XML.",
+      "Cascading Style Sheets is a style sheet language used for describing the presentation...",
       category:'WebDevelopment',
 
   },
@@ -44,7 +44,7 @@ const Courses = [
     image:
       "https://www.tutorialrepublic.com/lib/images/javascript-illustration.png",
     description:
-      "JavaScript is a programming language used to create interactive effects within web browsers.",
+      "JavaScript is a programming language used to create interactive effects within web...",
       category:'WebDevelopment',
 
   },
@@ -54,7 +54,7 @@ const Courses = [
     image:
       "https://static.vecteezy.com/system/resources/previews/000/304/787/original/vector-responsive-web-design.jpg",
     description:
-      "Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.",
+      "Responsive web design is an approach to web design that makes web pages render...",
       category:'WebDevelopment',
 
   },
@@ -63,7 +63,7 @@ const Courses = [
     title: "AJAX",
     image: "https://aitta.in/wp-content/uploads/2018/06/ajax.png",
     description:
-      "Asynchronous JavaScript and XML is a set of web development techniques using many web technologies . . .",
+      "Asynchronous JavaScript and XML is a set of web development techniques...",
       category:'WebDevelopment',
 
   },
@@ -73,7 +73,7 @@ const Courses = [
     image:
       "https://msatechnosoft.in/blog/wp-content/uploads/2018/06/bootstrap-image-MSA-Technosoft-1536x864.jpg",
     description:
-      "Bootstrap is a popular front-end development framework that helps developers create responsive and mobile-first websites.",
+      "Bootstrap is a popular front-end development framework that helps developers create...",
       category:'WebDevelopment',
 
   },
@@ -83,7 +83,7 @@ const Courses = [
     image:
       "https://mobidev.biz/wp-content/uploads/2020/02/node-js-development-company-1-1200x550@2x.png",
     description:
-      "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine . . .",
+      "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment...",
       category:'WebDevelopment',
 
   },
@@ -92,7 +92,7 @@ const Courses = [
     title: "React",
     image: "https://infolific.com/images/technology/react_js.jpg",
     description:
-      "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community . . .",
+      "React is a JavaScript library for building user interfaces. It is maintained by Facebook...",
       category:'WebDevelopment',
 
   },
@@ -102,82 +102,82 @@ const Courses = [
     image:
       "https://www.anynode.de/wp-content/uploads/2020/04/InfoGraphic_REST_API_B.jpg",
     description:
-      "A RESTful API is a web service that uses HTTP requests to GET, PUT, POST and DELETE data. It is based on the principles . . .",
+      "A RESTful API is a web service that uses HTTP requests to GET, PUT, POST and DELETE data...",
       category:'WebDevelopment',
 
   },
     {
       id: "WT010",
-      title: 'Full-Stack Web Development with Python',
+      title: 'Web Dev with Python',
       image: 'https://jafricode.com/wp-content/uploads/2022/12/full-stack-web-development-with-python-copy.png',
-      description: 'Learn to build dynamic web applications using the Python programming language and popular frameworks like Flask and Django.',
+      description: 'Learn to build dynamic web applications using the Python programming language...',
       category:'WebDevelopment',
     },
     {
       id: "WT011",
-      title: 'Web Scraping with Python',
+      title: 'Scraping with Python',
       image: 'https://scrape-it.cloud/assets/cache_image/assets/blog_img/web-scraping-with-python_1536x640_7dd.webp',
-      description: 'Discover how to extract data from websites and automate web-based tasks using Python libraries like Beautiful Soup and Scrapy.',
+      description: 'Discover how to extract data from websites and automate web-based tasks using Python libraries...',
       category:'WebDevelopment',
 
     },
     {
       id: "WT012",
-      title: 'Web Security Fundamentals',
+      title: 'Security Fundamentals',
       image: 'https://file-uploads.teachablecdn.com/b3fccdb407584ca6a85feaa4ec0853e1/1eb8af61e43f4c0b88d417ec58ee6ac5',
-      description: 'Learn the basics of web security, including common vulnerabilities and attacks, and how to protect web applications and websites from them.',
+      description: 'Learn the basics of web security, including common vulnerabilities and attacks...',
       category:'WebDevelopment',
 
     },
     {
       id: "WT013",
       title: "PHP Programming",
-      description: "Learn how to build dynamic websites using PHP, a popular server-side scripting language.",
+      description: "Learn how to build dynamic websites using PHP, a popular server-side scripting language...",
       image: "https://ng.smartthink.co.uk/wp-content/uploads/2017/03/PHP.jpg",
       category:'WebDevelopment',
     },
     {
       id: "WT014",
-      title: "Python Web Development",
-      description: "Discover how to create web applications using Python and popular frameworks such as Django and Flask.",
+      title: "Python Web Dev",
+      description: "Discover how to create web applications using Python and popular frameworks...",
       image: "https://www.developeronrent.com/blogs/wp-content/uploads/2019/09/python-for-web-development.jpg",
       category:'WebDevelopment',
     },
     {
       id: "WT015",
       title: "MySQL Fundamentals",
-      description: "Learn the basics of MySQL, a popular open-source database management system used in many web applications.",
+      description: "Learn the basics of MySQL, a popular open-source database management system used...",
       image: "https://i.pinimg.com/originals/33/4f/7a/334f7acddae2b05a1e52eb7ef774a2e9.jpg",
       category:'WebDevelopment',
 
     },
     {
       id: "WT016",
-      title: "MongoDB for Web Developers",
-      description: "Explore MongoDB, a popular NoSQL database used in many web applications for its flexibility and scalability.",
+      title: "MongoDB for Web",
+      description: "Explore MongoDB, a popular NoSQL database used in many web applications...",
       image: "https://imgs.search.brave.com/9JDauiYinmWseVT-4FgUa2WqIneeE2VjIgzlKXtFBaA/rs:fit:1024:500:1/g:ce/aHR0cHM6Ly9rcmlm/eS5jby93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMC8xMC9CZW5l/Zml0cy1vZi1DaG9v/c2luZy1Nb25nb0RC/LURhdGFiYXNlLWZv/ci1Zb3VyLVdlYi1B/cHBsaWNhdGlvbi5w/bmc",
       category:'WebDevelopment',
     },
     {
       id: "WT017",
       title: "GraphQL Fundamentals",
-      description: "Discover how to build APIs using GraphQL, a modern alternative to REST APIs that allows for more efficient data fetching and manipulation.",
+      description: "Discover how to build APIs using GraphQL, a modern alternative to REST APIs...",
       image: "https://graphql.org/img/og-image.png",
       category:'WebDevelopment',
 
     },
     {
       id: "WT018",
-      title: "Amazon Web Services Basics",
-      description: "Learn the fundamentals of Amazon Web Services (AWS), a popular cloud computing platform used in many web applications.",
+      title: "Amazon Web Services",
+      description: "Learn the fundamentals of Amazon Web Services (AWS), a popular cloud computing platform...",
       image: "https://miro.medium.com/v2/resize:fit:552/1*EOoftx5rrvmZ5KhaZACMbA.png",
       category:'WebDevelopment',
 
     },
     {
       id: "WT019",
-      title: "Google Cloud Platform for Web Developers",
-      description: "Discover how to use Google Cloud Platform (GCP) to build and deploy web applications in the cloud.",
+      title: "Google Cloud Platform",
+      description: "Discover how to use Google Cloud Platform (GCP) to build and deploy web applications in the cloud...",
       image: "https://ayudaleyprotecciondatos.es/wp-content/uploads/2020/10/cloud-computing-google.jpg",
       category:'WebDevelopment',
 
@@ -185,15 +185,15 @@ const Courses = [
     {
       id: "WT020",
       title: "Firebase Fundamentals",
-      description: "Explore Firebase, a popular mobile and web application development platform that provides a range of services for building high-quality apps.",
+      description: "Explore Firebase, a popular mobile and web application development platform that provides...",
       image: "https://cdn-images-1.medium.com/v2/resize:fit:1600/1*7hyRM50LJZP5sgEg3a76Xw.png",
       category:'WebDevelopment',
 
     },
     {
       id: "WT021",
-      title: "Content Management Systems",
-      description: "Learn how to use popular content management systems (CMS) such as WordPress, Drupal, and Joomla to build and manage websites.",
+      title: "Content Management",
+      description: "Learn how to use popular content management systems (CMS) such as WordPress, Drupal...",
       image: "https://www.unixmen.com/wp-content/uploads/2015/03/Content-Management-System.jpg",
       category:'WebDevelopment',
 
@@ -201,7 +201,7 @@ const Courses = [
     {
       id: "WT022",
       title: "WebRTC Fundamentals",
-      description: "Discover how to build real-time communication applications using WebRTC, a set of browser APIs that allow for peer-to-peer communication.",
+      description: "Discover how to build real-time communication applications using WebRTC...",
       image: "https://blog.wildix.com/wp-content/uploads/2021/08/WebRTC-a-Critical-Component-of-VoIP-and-UCC-scaled-e1627652078448.jpg",
       category:'WebDevelopment',
 
@@ -209,7 +209,7 @@ const Courses = [
       {
         id: "WT023",
         title: "Web Components",
-        description: "Explore web components, a set of standards for building reusable UI elements that can be used across different web applications.",
+        description: "Explore web components, a set of standards for building reusable UI elements that...",
         image: "https://howtocreateapps.com/wp-content/uploads/2019/05/Web-Components.jpg",
         category:'WebDevelopment',
 
@@ -217,7 +217,7 @@ const Courses = [
         {
           id: "WT024",
           title: "WebGL Fundamentals",
-          description: "Learn how to use WebGL, a JavaScript API for rendering 2D and 3D graphics in the browser.",
+          description: "Learn how to use WebGL, a JavaScript API for rendering 2D and 3D graphics in the browser...",
           image: "https://i.extremetech.com/imagery/content-types/03VXEDe26oHapswsfFn14jH/hero-image.jpg",
           category:'WebDevelopment',
 
@@ -232,15 +232,15 @@ const Courses = [
             {
               id: "WT026",
               title: "Web Authentication",
-              description: "Learn about web authentication standards such as OAuth and OpenID Connect, and how to use them to secure your web applications.",
+              description: "Learn about web authentication standards such as OAuth and OpenID Connect...",
               image: "https://webauthn.guide/dist/images/webauthn-meta-image.jpg",
               category:'WebDevelopment',
 
               },
               {
               id: "WT027",
-              title: "Websockets Fundamentals",
-              description: "Explore websockets, a protocol for bi-directional, real-time communication between the client and server.",
+              title: "Websockets Basics",
+              description: "Explore websockets, a protocol for bi-directional, real-time communication...",
               image: "https://www.tutorialspoint.com/websockets/images/web-sockets-mini-logo.jpg",
               category:'WebDevelopment',
 
@@ -249,15 +249,15 @@ const Courses = [
       id: "WT029",
       title: 'Web Design Principles',
       image: 'https://www.webalive.com.au/wp-content/uploads/2019/05/Good-website-design.jpg',
-      description: 'Explore the fundamental principles of web design, including layout, typography, color, and user experience.',
+      description: 'Explore the fundamental principles of web design, including layout, typography, color...',
       category:'WebDevelopment',
 
     },
     {
       id: "WT030",
-      title: 'Web Animation Fundamentals',
+      title: 'Web Animation ',
       image: 'https://www.bluecompass.com/filesimages/News%20and%20Blog/2020/web-animation.gif',
-      description: 'Learn the basics of creating animations for the web, including CSS animations and JavaScript animations.',
+      description: 'Learn the basics of creating animations for the web, including CSS animations...',
       category:'WebDevelopment',
 
     },
@@ -265,67 +265,67 @@ const Courses = [
       id: "WT031",
       title: 'Web Typography',
       image: 'https://assets.toptal.io/images?url=https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1140645/retina_500x200_cover-typeface-classification-f1707430870c13c8f86e2b71fa0c7f48.png',
-      description: 'Explore the principles of typography as they apply to the web, including font choice, hierarchy, and legibility.',
+      description: 'Explore the principles of typography as they apply to the web, including font choice, hierarchy...',
       category:"webdesign"
 
 
     },
     {
       id: "WT032",
-      title: 'Web Design for Mobile Devices',
+      title: 'Web Design for Mobile',
       image: 'https://digitalinsider.com.au/wp-content/uploads/2022/03/Mobile-first-web-blog-1024x683.png',
-      description: 'Discover the principles and techniques for designing web applications and websites that are optimized for mobile devices.',
+      description: 'Discover the principles and techniques for designing web applications and websites...',
       category:"webdesign"
     },
     {
       id: "WT033",
-      title: 'Web Design for E-commerce',
+      title: 'Web for E-commerce',
       image : 'https://5.imimg.com/data5/VO/JF/MY-51537875/e-commerce-website-design-1000x1000.png',
-      description: 'Learn how to design and build e-commerce websites that are effective, user-friendly, and optimized for sales.',
+      description: 'Learn how to design and build e-commerce websites that are effective, user-friendly...',
       category:"webdesign"
       },
       {
       id: "WT034",
-      title: 'Web Design for Nonprofits',
+      title: 'Web for Nonprofits',
       image: 'https://cornershopcreative.com/wp-content/uploads/2020/03/website-maintenance-for-nonprofits_Feature.jpg',
-      description: 'Explore the unique challenges and opportunities of designing websites and web applications for nonprofit organizations.',
+      description: 'Explore the unique challenges and opportunities of designing websites and web applications...',
       category:"webdesign"
       },
       {
       id: "WT035",
-      title: 'Web Design for Small Business',
+      title: 'Web for Small Business',
       image: 'https://www.zauca.com/wp-content/uploads/small-business-web-desig.png',
-      description: 'Learn how to design and build websites and web applications that meet the needs of small businesses and entrepreneurs.',
+      description: 'Learn how to design and build websites and web applications that meet the needs of...',
       category:"webdesign"
       },
       {
       id: "WT036",
-      title: 'Web Design for Education',
+      title: 'Web for Education',
       image: 'https://img.freepik.com/free-vector/education-horizontal-typography-banner-set-with-learning-knowledge-symbols-flat-illustration_1284-29493.jpg',
-      description: 'Discover the unique challenges and opportunities of designing websites and web applications for educational institutions.',
+      description: 'Discover the unique challenges and opportunities of designing websites and web applications...',
       category:"webdesign"
 
       },
       {
       id: "WT037",
-      title: 'Web Design for Healthcare',
+      title: 'Web for Healthcare',
       image: 'https://www.scnsoft.com/blog-pictures/ecommerce/healthcare-website-design/medical-website-design.png',
-      description: 'Learn how to design and build websites and web applications that meet the needs of healthcare providers and patients.',
+      description: 'Learn how to design and build websites and web applications that meet the needs...',
       category:"webdesign"
 
       },
       {
       id: "WT038",
-      title: 'Web Design for Government',
+      title: 'Web for Government',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1L7yitJzIYPdYjGdu4Pf33DMsnt5I0qLGxg&usqp=CAU',
-      description: 'Explore the unique challenges and opportunities of designing websites and web applications for government agencies and departments.',
+      description: 'Explore the unique challenges and opportunities of designing websites and web applications...',
       category:"webdesign"
       },
       {
       id: "WT039",
       title: 'Web Design for the Arts',
       image: 'https://themeforest.img.customer.envatousercontent.com/files/233447893/preview/00.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=b3d76ee6e34ee576c296c64b33238872',
-      description: 'Discover the principles and techniques for designing websites and web applications that showcase the work of artists and creative professionals.',
+      description: 'Discover the principles and techniques for designing websites and web applications...',
       category:"webdesign"
 
       },
@@ -333,64 +333,64 @@ const Courses = [
       id: "WT040",
       title: 'Web Design for Sports',
       image: 'https://media.designrush.com/articles/272495/conversions/Best-Sports-Web-Design-v1-details.jpg',
-      description: 'Learn how to design and build websites and web applications that meet the needs of sports organizations and fans.',
+      description: 'Learn how to design and build websites and web applications that meet the needs of sports...',
       category:"webdesign"
       },
       {
       id: "WT041",
-      title: 'Web Design for Social Media',
+      title: 'Web for Social Media',
       image: 'https://www.aabhishek.com/wp-content/uploads/2020/10/Creative-Website-Social-Banner-Design-Company-in-Vadodara-India.jpg',
-      description: 'Explore the unique challenges and opportunities of designing websites and web applications that integrate with social media platforms.',
+      description: 'Explore the unique challenges and opportunities of designing websites and web applications...',
       category:"webdesign"
       },
       {
       id: "WT042",
-      title: 'Web Design for Marketing',
+      title: 'Web for Marketing',
       image: 'https://www.kindpng.com/picc/m/151-1512076_web-design-marketing-animation-hd-png-download.png',
-      description: 'Learn how to design and build websites and web applications that are optimized for marketing and lead generation.',
+      description: 'Learn how to design and build websites and web applications that are optimized for...',
       category:"webdesign"
       },
       {
       id: "WT043",
       title: 'Web Design for Gaming',
       image: 'https://www.bootstrapdash.com/wp-content/uploads/2020/04/gaming-website-template.jpg',
-      description: 'Discover the principles and techniques for designing websites and web applications that cater to gamers and gaming enthusiasts.',
+      description: 'Discover the principles and techniques for designing websites and web applications...',
       category:"webdesign"
       },
       {
       id: "WT044",
       title: 'Web Design for Music',
       image: 'https://imgs.search.brave.com/VOe_uYPxvTYYIwADffT3Hq54HM1JRlWifYOVHjglfuU/rs:fit:1200:714:1/g:ce/aHR0cHM6Ly93d3cu/Ym9vdHN0cmFwZGFz/aC5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjAvMDMvbXVz/aWMtd2Vic2l0ZS10/ZW1wYWx0ZS5qcGc',
-      description: 'Learn how to design and build websites and web applications that showcase music and musicians.',
+      description: 'Learn how to design and build websites and web applications that showcase music...',
       category:"webdesign"
       },
       {
       id: "WT045",
       title: 'Web Design for Travel',
       image: 'https://landisher.com/wp-content/uploads/2016/01/travel-agency-web-design.jpg',
-      description: 'Explore the unique challenges and opportunities of designing websites and web applications for the travel industry.',
+      description: 'Explore the unique challenges and opportunities of designing websites and web applications...',
       category:"webdesign"
       },
       {
       id: "WT046",
       title: 'Web Design for Food',
       image: 'https://cdn.dribbble.com/users/669353/screenshots/11281912/media/0d82f9835f2437cf0aaacfc952cb7547.jpg',
-      description: 'Learn how to design and build websites and web applications that showcase food and the culinary arts.',
+      description: 'Learn how to design and build websites and web applications that showcase food and the culinary...',
       category:"webdesign"
       },
       {
       id: "WT047",
-      title: 'Web Design for Real Estate',
+      title: 'Web for Real Estate',
       image: 'https://image.freepik.com/free-vector/real-estate-banner-template_23-2148781688.jpg',
-      description: 'Discover the principles and techniques for designing websites and web applications that meet the needs of real estate professionals and their clients.',
+      description: 'Discover the principles and techniques for designing websites and web applications...',
       category:"webdesign"
 
       },
       {
       id: "WT048",
-      title: 'Web Design for Law Firms',
+      title: 'Web for Law Firms',
       image: 'https://www.theedigital.com/wp-content/uploads/2022/09/law-firm-website-design.webp',
-      description: 'Learn how to design and build websites and web applications that meet the needs of law firms and legal professionals.',
+      description: 'Learn how to design and build websites and web applications that meet the needs of law...',
       category:"webdesign"
 
     },
@@ -400,7 +400,7 @@ const Courses = [
     image:
       "https://blog.printleaf.com/wp-content/uploads/2017/12/Color-Theory-Featured-Image-790x345.jpg",
     description:
-      "Color theory is the study of the relationships between colors, often used in graphic design to create harmonious color palettes . . .",
+      "Color theory is the study of the relationships between colors, often used in graphic design...",
       category:"webdesign"
   },
   {
@@ -409,7 +409,7 @@ const Courses = [
     image:
       "http://www.fastartup.com/wp-content/uploads/2017/08/Digital-Design-Typography-The-Right-Way-1163x423.png",
     description:
-      "Typography is the art and technique of arranging type to make written language legible, readable . . .",
+      "Typography is the art and technique of arranging type to make written language legible, readable...",
       category:"webdesign"
 
   },
@@ -419,7 +419,7 @@ const Courses = [
     image:
       "https://www.educba.com/academy/wp-content/uploads/2016/01/Website-Design-Layout.jpg",
     description:
-      "Layout design is the process of arranging visual elements on a page or screen, such as text, images, and other media . . .",
+      "Layout design is the process of arranging visual elements on a page or screen...",
       category:"webdesign"
   },
   {
@@ -428,7 +428,7 @@ const Courses = [
     image:
       "https://uiuxdesignguide.com/wp-content/uploads/2020/11/6-Principles-of-User-Interface-Design.jpg",
     description:
-      "User interface (UI) design is the process of designing the visual layout of an application or website, focusing on the look . . .",
+      "User interface (UI) design is the process of designing the visual layout of website...",
       category:"webdesign"
 
   },
@@ -438,7 +438,7 @@ const Courses = [
     image:
       "https://www.mobinfo.net/wp-content/uploads/2019/08/user-experience.jpg",
     description:
-      "User experience (UX) design is the process of designing products and services with a focus placed on the quality . . .",
+      "User experience (UX) design is the process of designing products and services...",
       category:"webdesign"
 
   },
@@ -449,7 +449,7 @@ const Courses = [
       "https://www.perfecto.io/sites/perfecto/files/styles/social_preview_image/public/image/2019-06/image-blog-responsive-web-design-testing-tips-600x400.jpg?itok=kP1j7B73",
     description:
 
-      "Responsive design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.",
+      "Responsive design is an approach to web design that makes web pages render well on a variety...",
       category:"webdesign"
 
   },
@@ -459,7 +459,7 @@ const Courses = [
     image:
       "https://cdn.sanity.io/images/oneb1r22/production/bc8a2c5fa93120abe148012e3112ac6e7544cb30-1960x1140.jpg",
     description:
-      "Wireframing is the process of creating a visual representation of the layout and structure of a website or application . . .",
+      "Wireframing is the process of creating a visual representation of the layout and structure...",
       category:"webdesign"
 
   },
@@ -469,7 +469,7 @@ const Courses = [
     image:
       "https://www.bostonwebdesigners.net/wp-content/uploads/seo-ACCESSIBILITY-Recovered-3.png",
     description:
-      "Accessibility refers to the design of products, devices, services, or environments for people with disabilities . . .",
+      "Accessibility refers to the design of products, devices, services, or environments...",
       category:"webdesign"
 
   },
@@ -479,27 +479,27 @@ const Courses = [
     image:
       "https://2stallions.com/blog/wp-content/uploads/2019/12/blog-feature-visualhierarchy-1.jpg",
     description:
-      "Visual hierarchy refers to the arrangement of visual elements in a way that prioritizes the importance of each element . . .",
+      "Visual hierarchy refers to the arrangement of visual elements in a way that prioritizes...",
       category:"webdesign"
 
   },
   {
     id: 'WD058',
-    title: "Search Engine Optimization (SEO)",
+    title: "Search Optimization",
     image:
       "https://thesocialmediamonthly.com/wp-content/uploads/2020/09/search-engine-optimisation-scaled-1.jpg",
     description:
-      "The practice of increasing the quantity and quality of traffic to your website through organic search engine results.",
+      "The practice of increasing the quantity and quality of traffic to your website...",
       category:"marketing"
 
   },
   {
     id: 'WD059',
-    title: "Pay-Per-Click Advertising (PPC)",
+    title: "Pay-Per-Click (PPC)",
     image:
       "https://blog.whitehat-seo.co.uk/hs-fs/hubfs/social-suggested-images/ppc-management.png?width=824&name=ppc-management.png",
     description:
-      "A model of internet marketing in which advertisers pay a fee each time one of their ads is clicked.",
+      "A model of internet marketing in which advertisers pay a fee each time one of their ads is clicked...",
       category:"marketing"
 
   },
@@ -509,7 +509,7 @@ const Courses = [
     image:
       "https://contentwriters.com/blog/wp-content/uploads/2019/08/Content-Marketing-Strategy-2020-Basics.jpg",
     description:
-      "A strategic marketing approach focused on creating valuable, relevant, and consistent content to attract and retain a clearly defined audience.",
+      "A strategic marketing approach focused on creating valuable, relevant, and consistent...",
       category:"marketing"
 
   },
@@ -519,7 +519,7 @@ const Courses = [
     image:
       "https://experienceadvertising.com/wp-content/uploads/2019/09/shutterstock_684313486.jpg",
     description:
-      "The process of creating content and engaging with audiences on social media platforms to promote a product or service.",
+      "The process of creating content and engaging with audiences on social media platforms...",
       category:"marketing"
 
   },
@@ -528,7 +528,7 @@ const Courses = [
     title: "Email Marketing",
     image: "https://blog.kulturekonnect.com/hubfs/email-marketing.jpg",
     description:
-      "The use of email to promote products or services and build relationships with potential and existing customers.",
+      "The use of email to promote products or services and build relationships...",
       category:"marketing"
 
   },
@@ -538,7 +538,7 @@ const Courses = [
     image:
       "https://nuundigital.com/wp-content/uploads/2019/11/influencer-marketing-1.jpg",
     description:
-      "A form of marketing that focuses on using influential people to drive a brand’s message to the larger market.",
+      "A form of marketing that focuses on using influential people to drive a brand’s message...",
       category:"marketing"
 
   },
@@ -548,7 +548,7 @@ const Courses = [
     image:
       "https://scooparticle.com/wp-content/uploads/2019/11/Video-Marketing.png",
     description:
-      "The use of video to promote and market your product or service.",
+      "Video marketing is a strategy of promoting products or services using videos...",
       category:"marketing"
 
   },
@@ -558,7 +558,7 @@ const Courses = [
     image:
       "https://blog.revalsys.com/wp-content/uploads/2016/11/mobile-marketing.jpg",
     description:
-      "A multi-channel, digital marketing strategy aimed at reaching a target audience on their smartphones, tablets . . .",
+      "A multi-channel, digital marketing strategy aimed at reaching a target audience...",
       category:"marketing"
 
   },
@@ -568,7 +568,7 @@ const Courses = [
     image:
       "https://thumbs.dreamstime.com/b/digital-marketing-analytics-data-report-flat-design-concept-displaying-computer-screen-web-research-97837474.jpg",
     description:
-      "The collection, analysis, and reporting of website and social media data to understand and optimize performance . . .",
+      "The collection, analysis, and reporting of website and social media data to understand...",
       category:"marketing"
 
   },

@@ -60,6 +60,7 @@ export const Input = styled.input`
   padding: 10px;
   border-radius: 10px;
   border: none;
+  outline:none;
 `;
 
 export const LoginButton = styled.button`

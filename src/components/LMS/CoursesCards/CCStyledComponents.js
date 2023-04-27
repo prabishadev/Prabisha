@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import "typeface-roboto";
 
 export const CourseCard = styled.div`
-  min-height: 250px;
+  height: 350px;
   width: 250px;
-  margin: 20px;
+  margin: 15px;
   border-radius: 10px;
  border: 1px solid #c4c2be;
   transition: all 0.5s;
@@ -22,11 +22,12 @@ export const CourseCard = styled.div`
 
 export const CourseInfo = styled.div`
 margin:10px;
+margin-bottom: 5px;
 `
 
 
 export const CourseImage = styled.img`
-  height:100px;
+  height:150px;
   width: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -48,18 +49,10 @@ export const CourseDescription = styled.p`
     font-family:"Muli sans-serif"
     text-overflow: ellipsis;
     overflow: hidden;
-    
-}
 `;
 
 export const StartBtn = styled.div`
-  background-image: linear-gradient(
-    to right,
-    #ff512f 0%,
-    #f09819 51%,
-    #ff512f 100%
-  );
-
+ background-color: #0b034f;
   padding: 10px;
   text-align: center;
   text-transform: uppercase;

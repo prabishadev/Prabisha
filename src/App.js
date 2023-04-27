@@ -27,8 +27,14 @@ import UIDesign from "./components/LMS/Courses/UIDesign";
 import UXDesign from "./components/LMS/Courses/UXDesign";
 import WireFraming from "./components/LMS/Courses/WireFraming";
 import Accessibility from "./components/LMS/Courses/Accessibility";
+import WebDevelopmentWithPython from "./components/LMS/Courses/PythonWebDev";
 
 import PremiumCourses from "./components/LMS/PremiumCourses";
+import WebScrappingWithPython from "./components/LMS/Courses/WebScrappingWithPython";
+import WebSecurityFundamentals from "./components/LMS/Courses/WebSecurityFundamentals";
+import PHPProgramming from "./components/LMS/Courses/PHPProgramming";
+import MySQLFundamentals from "./components/LMS/Courses/MySQLFundamentals"
+
 
 const App = () => (
   <>
@@ -66,6 +72,15 @@ const App = () => (
       <Route path="/learn-Wireframing" Component={WireFraming} />
       <Route path="/learn-Accessibility" Component={Accessibility} />
       <Route path="/learn-Visual-Hierarchy" Component={Accessibility} />
+      <Route path="/learn-Full-Stack-Web-Development-with-Python" Component={WebDevelopmentWithPython} />
+      <Route path="/learn-Web-Dev-with-Python" Component={WebDevelopmentWithPython}/>
+      <Route path="/learn-Scraping-with-Python" Component={WebScrappingWithPython}/>
+      <Route path="/learn-Security-Fundamentals" Component={WebSecurityFundamentals}/>
+      <Route path="/learn-PHP-Programming" Component={PHPProgramming}/>
+      <Route path="/learn-Python-Web-Dev" Component={WebDevelopmentWithPython}/>
+      <Route path="/learn-MySQL-Fundamentals" Component={MySQLFundamentals}/>
+
+      
     </Routes>
   </>
 );

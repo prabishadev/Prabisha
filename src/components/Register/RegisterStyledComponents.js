@@ -72,6 +72,7 @@ export const Input = styled.input`
   padding: 10px;
   border-radius: 10px;
   border: none;
+  outline: none;
   @media screen and (max-width: 675px) {
     width: 90%;
   }

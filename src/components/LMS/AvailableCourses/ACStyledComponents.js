@@ -11,8 +11,8 @@ export const ACContainer = styled.div`
   background-color: linear-gradient(to right, #d3cce3, #e9e4e0);
   padding: 30px;
   @media (min-width: 900px) {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 `;
 
@@ -36,8 +36,8 @@ export const TabItem = styled.div`
   padding-left: 30px;
   padding-right: 30px;
   cursor: pointer;
-  background-color: ${(props) => (props.active ? "#0b034f" : "#ffffff")};
-  color: ${(props) => (props.active ? "#c99b3b" : "#333")};
+  background-color: ${(props) => (props.active ? "#cced0e" : "#0b034f")};
+  color: ${(props) => (props.active ? "black" : "White")};
   border-top-left-radius: 10px;
   border-color: #C99B3B;
   border-style: solid;
@@ -50,10 +50,11 @@ export const TabItem = styled.div`
 `;
 
 export const TabContent = styled.div`
-  padding: 20px;
+  padding: 5px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin:0px !important;
 `;
 
 

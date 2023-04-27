@@ -1,6 +1,7 @@
 import {
   HeaderContainer,
   Logo,
+  Logout,
   NavContainer,
   NavItem,
   LinkItem,
@@ -61,7 +62,7 @@ const Header = () => {
               onClick={() => handleNavClick("available")}
             >
             <TabIcons src="https://cdn.iconscout.com/icon/premium/png-256-thumb/online-course-2184643-1830185.png?f=webp&w=256"  alt="avail"/>
-             Available Courses  {score}
+             Available Courses:  {65}
             </NavItem>
           </LinkItem>
           <LinkItem to="/lms-premium">
@@ -91,7 +92,7 @@ const Header = () => {
             </NavItem>
           </LinkItem>
           <Link to="/">
-            <LogoutBtnMobile>Logout</LogoutBtnMobile>
+            <LogoutBtnMobile>Logout <Logout/></LogoutBtnMobile> 
           </Link>
         </NavContainer>
         <ProfileIconContainer>
@@ -100,9 +101,9 @@ const Header = () => {
             src="https://i.pinimg.com/originals/d3/7b/02/d37b020e87945ad7f245e48df752ed03.jpg"
             alt="profile"
           />
-          <Link to="/">
-            <LogoutBtn>Logout</LogoutBtn>
-          </Link>
+          <LinkItem to="/">
+            <LogoutBtn>Logout <Logout/></LogoutBtn>
+          </LinkItem>
         </ProfileIconContainer>
       </HeaderContainer>
     </>
