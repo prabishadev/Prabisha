@@ -28,12 +28,20 @@ import UXDesign from "./components/LMS/Courses/UXDesign";
 import WireFraming from "./components/LMS/Courses/WireFraming";
 import Accessibility from "./components/LMS/Courses/Accessibility";
 import WebDevelopmentWithPython from "./components/LMS/Courses/PythonWebDev";
+import MongoDBForWeb from "./components/LMS/Courses/MongdbForWeb";
 
 import PremiumCourses from "./components/LMS/PremiumCourses";
 import WebScrappingWithPython from "./components/LMS/Courses/WebScrappingWithPython";
 import WebSecurityFundamentals from "./components/LMS/Courses/WebSecurityFundamentals";
 import PHPProgramming from "./components/LMS/Courses/PHPProgramming";
 import MySQLFundamentals from "./components/LMS/Courses/MySQLFundamentals"
+import GraphQL from "./components/LMS/Courses/GraphQLFundamentals";
+import GoogleCloudPlatform from "./components/LMS/Courses/GoogleCloudPlatform";
+import AmazonWebServices from "./components/LMS/Courses/AmazonWebServices";
+import FireBaseFundamentals from "./components/LMS/Courses/FireBaseFundamentals";
+import ContentManagementSystem from "./components/LMS/Courses/ContentManagement";
+import WebRTCFundamentals from "./components/LMS/Courses/WebRTCFundamentals";
+import WebComponents from "./components/LMS/Courses/WebComponents";
 
 
 const App = () => (
@@ -79,6 +87,14 @@ const App = () => (
       <Route path="/learn-PHP-Programming" Component={PHPProgramming}/>
       <Route path="/learn-Python-Web-Dev" Component={WebDevelopmentWithPython}/>
       <Route path="/learn-MySQL-Fundamentals" Component={MySQLFundamentals}/>
+      <Route path="/learn-MongoDB-for-Web" Component={MongoDBForWeb}/>
+      <Route path="/learn-GraphQL-Fundamentals" Component={GraphQL}/>
+      <Route path="/learn-Amazon-Web-Services" Component={AmazonWebServices}/>
+      <Route path="/learn-Google-Cloud-Platform" Component={GoogleCloudPlatform}/>
+      <Route path="/learn-Firebase-Fundamentals" Component={FireBaseFundamentals}/>
+      <Route path="/learn-Content-Management" Component={ContentManagementSystem}/>
+      <Route path="/learn-WebRTC-Fundamentals" Component={WebRTCFundamentals}/>
+      <Route path="/learn-Web-Components" Component={WebComponents}/>
 
       
     </Routes>
