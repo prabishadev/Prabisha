@@ -50,7 +50,7 @@ const Register = () => {
       address,
     };
 
-    const url = "https://login-register-api-9xek.onrender.com/register";
+    const url = "https://prabisha-l-r.onrender.com/register";
     // console.log(userDetails);
 
     try {
