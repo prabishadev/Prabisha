@@ -46,7 +46,7 @@ const Login = () => {
     setLoading(true);
     event.preventDefault();
 
-    const url = "https://login-register-api-9xek.onrender.com/login";
+    const url = "https://prabisha-l-r.onrender.com/login";
 
     try {
       const response = await axios.post(url, {
