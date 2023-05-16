@@ -71,6 +71,7 @@ const Login = () => {
   const handleSubmit = async (event) => {
     setLoading(true);
     event.preventDefault();
+<<<<<<< HEAD
     const data = {
       email,
       password,
@@ -78,6 +79,11 @@ const Login = () => {
   
     const url = "https://login-register-api-160523.onrender.com/login";
   
+=======
+
+    const url = "https://prabisha-l-r.onrender.com/login";
+
+>>>>>>> f96d5be01183e87f65e282c4e21ff5aaa28eff2f
     try {
       const response = await fetch(url, {
         method: 'POST',
