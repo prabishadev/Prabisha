@@ -73,10 +73,6 @@ const questions = [
     question: "What is the correct syntax for a switch statement in PHP?",
     options: ["switch (condition) { case 1: code; break; }", "switch (condition) { case 1: code; default: code; }", "switch (condition) { case 1: code; case 2: code; }", "switch (condition) { default: code; }"],
     answer: `switch (condition) {question: "What is the output of the following code? $a = 5; $b = 10; echo ($a > $b) ? 'Yes' : 'No';`,
-<<<<<<< HEAD
-  
-=======
->>>>>>> f96d5be01183e87f65e282c4e21ff5aaa28eff2f
     },
     {
       qnNo:13,
