@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { BallTriangle } from "react-loader-spinner";
 
@@ -19,12 +19,14 @@ import {
 } from "./RegisterStyledComponents";
 
 const Register = () => {
-  const [firstname, setFirstName] = useState("");
-  const [lastname, setLastName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
   const [dob, setDob] = useState("");
-  const [phonenumber, setPhoneNumber] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [address, setAddress] = useState("");
   const history = useNavigate();
   const [isLoading, setLoading] = useState(false);
@@ -41,27 +43,40 @@ const Register = () => {
     setLoading(true);
     event.preventDefault();
     const data = {
-      firstname,
-      lastname,
+      firstName,
+      lastName,
       email,
+      phoneNumber,
       password,
+      confirmPassword,
       dob,
-      phonenumber,
-      address,
+       address,
     };
 
-    const url = "https://login-register-api-9xek.onrender.com/register";
+    const url = "https://login-register-api-160523.onrender.com/register";
     // console.log(userDetails);
 
     try {
-      const response = await axios.post(url, data);
-      console.log(response.data);
-      if (response.data.status === 200) {
+      const response = await fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      
+      // If you expect a JSON response:
+      const responseData = await response.json();
+      console.log(responseData)
+      // Make sure to handle any error scenarios
+      if (response.ok) {
+      // const response = await axios.post(url, data);
+      // console.log(response.status);
+      // if (response.data.message === "Registration successful") {
         setLoading(false);
         history("/lms-available");
       } else {
         setLoading(false);
-
         alert("Registration  Failed");
         history("/register");
       }
@@ -85,7 +100,7 @@ const Register = () => {
                     id="firstname"
                     type="text"
                     placeholder="Enter First Name"
-                    value={firstname}
+                    value={firstName}
                     onChange={(event) => setFirstName(event.target.value)}
                   />
                 </Cont>
@@ -95,7 +110,7 @@ const Register = () => {
                     id="lastname"
                     type="text"
                     placeholder="Enter Last Name"
-                    value={lastname}
+                    value={lastName}
                     onChange={(event) => setLastName(event.target.value)}
                   />
                 </Cont>
@@ -117,7 +132,7 @@ const Register = () => {
                     id="phonenumber"
                     placeholder="Enter Phone Number"
                     type="tel"
-                    value={phonenumber}
+                    value={phoneNumber}
                     onChange={(event) => setPhoneNumber(event.target.value)}
                   />
                 </Cont>
@@ -138,7 +153,9 @@ const Register = () => {
                   <Input
                     type="password"
                     id="confirmpassword"
+                    value={confirmPassword}
                     placeholder="Confirm Password"
+                    onChange={(event) => setConfirmPassword(event.target.value)}
                   />
                 </Cont>
               </Cont1>

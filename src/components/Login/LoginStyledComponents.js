@@ -38,6 +38,7 @@ export const Heading = styled.h2`
 export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
+  outline: none;
 `;
 
 export const Loader = styled.div`

@@ -17,6 +17,7 @@ const TabItems = [
   { id: "WebDevelopment", title: "Web Development" },
   { id: "webdesign", title: "Web Designing" },
   { id: "marketing", title: "Digital Marketing" },
+  {id:"onboarding", title:"Onboarding" },
 ];
 
 const Courses = [
@@ -572,6 +573,27 @@ const Courses = [
       category:"marketing"
 
   },
+  {
+    id: 'OB067',
+    title: "New Employee Onboarding",
+    image:
+      "https://res.cloudinary.com/dlovqnrza/image/upload/v1683260487/NewEmp_rh7ge0.jpg",
+    description:
+      "New employee onboarding is the process of integrating new hires...",
+      category:"onboarding"
+
+  },
+  {
+    id: 'OB067',
+    title: "New Joinee Onboarding",
+    image:
+      "https://res.cloudinary.com/dlovqnrza/image/upload/v1683261476/Employee-Onboarding_ixijsz.png",
+    description:
+      "Onboarding is the process of integrating a new employee into...",
+      category:"onboarding"
+  },
+  
+  
 ];
 
 const AvailableCourses = () => {

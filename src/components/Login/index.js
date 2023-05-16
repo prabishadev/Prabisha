@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { BallTriangle } from "react-loader-spinner";
-import axios from "axios";
+// import axios from "axios";
 
 import {
   LoginContainer,
@@ -42,20 +42,54 @@ const Login = () => {
   // }, []);
   // console.log(user);
 
+  // const handleSubmit = async (event) => {
+  //   setLoading(true);
+  //   event.preventDefault();
+
+  //   const url = "https://login-register-api-160523.onrender.com/login";
+
+  //   try {
+  //     const response = await axios.post(url, {
+  //       email,
+  //       password,
+  //     });
+  //     if (email === "" || password === "") {
+  //       navigate("/register");
+  //     } else if (response.data.status === 200) {
+  //       setLoading(false);
+  //       navigate("/lms-available");
+  //     } else {
+  //       setLoading(false);
+  //       alert("Login Failed");
+  //       navigate("/register");
+  //     }
+  //   } catch (error) {
+  //     console.log(error.response.data);
+  //   }
+  // };
+
   const handleSubmit = async (event) => {
     setLoading(true);
     event.preventDefault();
-
-    const url = "https://login-register-api-9xek.onrender.com/login";
-
+    const data = {
+      email,
+      password,
+    };
+  
+    const url = "https://login-register-api-160523.onrender.com/login";
+  
     try {
-      const response = await axios.post(url, {
-        email,
-        password,
+      const response = await fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json'
+        }
       });
+  
       if (email === "" || password === "") {
         navigate("/register");
-      } else if (response.data.status === 200) {
+      } else if (response.ok) {
         setLoading(false);
         navigate("/lms-available");
       } else {
@@ -67,7 +101,7 @@ const Login = () => {
       console.log(error.response.data);
     }
   };
-
+  
   return (
     <>
       {isLoading ? (

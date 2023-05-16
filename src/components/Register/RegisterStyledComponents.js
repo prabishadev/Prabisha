@@ -40,6 +40,7 @@ export const InputContainer = styled.div`
   flex-direction: column;
   width: 80%;
   margin: 15px;
+  outline: none;
 `;
 
 export const Cont1 = styled.div`

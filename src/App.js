@@ -1,5 +1,6 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
+
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
@@ -8,6 +9,7 @@ import Services from "./components/ServicesPage";
 import PortfolioPage from "./components/PortfolioPage";
 import TypoGraphy from "./components/LMS/Courses/TypoGraphy";
 import Login from "./components/Login";
+import SignIn from "./components/SignIn/signInAuth";
 import Register from "./components/Register";
 import ColorTheory from "./components/LMS/Courses/ColorTheory";
 import AvailableCourses from "./components/LMS/AvailableCourses";
@@ -42,7 +44,7 @@ import FireBaseFundamentals from "./components/LMS/Courses/FireBaseFundamentals"
 import ContentManagementSystem from "./components/LMS/Courses/ContentManagement";
 import WebRTCFundamentals from "./components/LMS/Courses/WebRTCFundamentals";
 import WebComponents from "./components/LMS/Courses/WebComponents";
-
+import NewEmpOnBoarding from "./components/LMS/Courses/NewEmpOnBoarding";
 
 const App = () => (
   <>
@@ -95,6 +97,8 @@ const App = () => (
       <Route path="/learn-Content-Management" Component={ContentManagementSystem}/>
       <Route path="/learn-WebRTC-Fundamentals" Component={WebRTCFundamentals}/>
       <Route path="/learn-Web-Components" Component={WebComponents}/>
+      <Route path="/sign-in" Component={SignIn}/>
+      <Route path="learn-New-Employee-Onboarding" Component={NewEmpOnBoarding}/>
 
       
     </Routes>
