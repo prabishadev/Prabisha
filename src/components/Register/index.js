@@ -53,11 +53,8 @@ const Register = () => {
        address,
     };
 
-<<<<<<< HEAD
     const url = "https://login-register-api-160523.onrender.com/register";
-=======
-    const url = "https://prabisha-l-r.onrender.com/register";
->>>>>>> f96d5be01183e87f65e282c4e21ff5aaa28eff2f
+
     // console.log(userDetails);
 
     try {
