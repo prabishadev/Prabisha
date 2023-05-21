@@ -55,7 +55,7 @@ const MainHeader = () => {
           </ContactInfo1>
           <ContactInfo2>
             <MailIcon />
-            <Text>care@prabisha.co.uk</Text>
+            <Text> care@prabisha.co.uk </Text>
           </ContactInfo2>
         </ContactContainer>
       </Section1>
